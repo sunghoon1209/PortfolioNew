@@ -15,12 +15,12 @@ header {
         height: inherit;
         margin: 0 auto;
         display: flex;
-        align-items: center;
+        line-height: 100px;
 
         // 로고 
         .header__logo {
             width: 50%;
-            color: red;
+
 
             a {
                 font-family: 'SBAggroB';
@@ -43,15 +43,13 @@ header {
                     font-family: 'NanumSquare';
                     font-weight: 800;
 
-                    // 마우스 over시 색상변경
-                    a {
-                        &:hover {
-                            color: $main;
-                        }
+                    a.header__nav-list__pc-checked {
+                        color: $main;
+                        // font-size: 36px;/
                     }
 
-
                 }
+
             }
         }
 
@@ -80,6 +78,12 @@ header {
                 // order: 2;
                 display: flex;
 
+                a {
+                    font-family: 'SBAggroB';
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                }
+
             }
 
             // nav메뉴
@@ -107,8 +111,9 @@ header {
                 .header__nav-list {
                     width: 100%;
                     height: calc(100% - 80px);
-                    
+
                     position: fixed;
+                    // left: -100%;
                     left: 0%;
                     top: 0;
                     margin-top: 80px;
@@ -128,6 +133,10 @@ header {
                             font-family: 'NanumSquare';
                             font-weight: 800;
                             font-size: 3rem;
+
+                            a.header__nav-list__mobile-checked {
+                                color: $main;
+                            }
                         }
                     }
 
