@@ -1,0 +1,108 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #B3A9E4;
+  position: fixed;
+}
+
+header .header__wrapper {
+  width: 1024px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .header__wrapper .header__logo {
+  width: 50%;
+  color: red;
+}
+header .header__wrapper .header__logo a {
+  font-family: "SBAggroB";
+  font-size: 2rem;
+  font-weight: 800;
+}
+header .header__wrapper nav.header__nav__pc {
+  width: 50%;
+}
+header .header__wrapper nav.header__nav__pc ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__wrapper nav.header__nav__pc ul li {
+  text-align: center;
+  font-family: "NanumSquare";
+  font-weight: 800;
+}
+header .header__wrapper nav.header__nav__pc ul li a:hover {
+  color: #B3A9E4;
+}
+header .header__wrapper .header__nav__mobile-tablet {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  header {
+    height: 80px;
+  }
+  header .header__wrapper {
+    width: 95%;
+  }
+  header .header__wrapper .header__logo {
+    width: 50%;
+    color: red;
+    display: flex;
+  }
+  header .header__wrapper nav.header__nav__pc {
+    display: none;
+  }
+  header .header__wrapper .header__nav__mobile-tablet {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__hbm img {
+    width: 24px;
+    height: 24px;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__nav-list {
+    width: 100%;
+    height: calc(100% - 80px);
+    position: fixed;
+    left: 0%;
+    top: 0;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__nav-list ul {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__nav-list ul li {
+    text-align: left;
+    font-family: "NanumSquare";
+    font-weight: 800;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  header .header__wrapper {
+    width: 90%;
+  }
+}/*# sourceMappingURL=header.css.map */

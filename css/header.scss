@@ -1,0 +1,148 @@
+// PC버전 header
+
+@import "./mixin.scss";
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid $main;
+    position: fixed;
+}
+
+header {
+    .header__wrapper {
+        width: $grid__pc;
+        height: inherit;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        // 로고 
+        .header__logo {
+            width: 50%;
+            color: red;
+
+            a {
+                font-family: 'SBAggroB';
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+
+        // nav메뉴
+        nav.header__nav__pc {
+            width: 50%;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+
+                li {
+                    text-align: center;
+                    font-family: 'NanumSquare';
+                    font-weight: 800;
+
+                    // 마우스 over시 색상변경
+                    a {
+                        &:hover {
+                            color: $main;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        // pc에선 mobile/tablet용  nav메뉴 숨기기
+        .header__nav__mobile-tablet {
+            display: none;
+
+        }
+    }
+}
+
+
+
+// 반응형 태블릿
+@media (max-width:$tablet) {
+    header {
+        height: 80px;
+
+        .header__wrapper {
+            width: $grid__tablet;
+
+            // 로고 
+            .header__logo {
+                width: 50%;
+                color: red;
+                // order: 2;
+                display: flex;
+
+            }
+
+            // nav메뉴
+            nav.header__nav__pc {
+                display: none;
+            }
+
+            // pc에선 mobile/tablet용  nav메뉴 숨기기
+            .header__nav__mobile-tablet {
+
+                width: 50%;
+                display: flex;
+                justify-content: end;
+
+                // 햄버거 메뉴 크기
+                .header__hbm {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                // mobile/tablet 에서 햄버거 버튼 클릭시 nav 메뉴 
+                // mobile/tablet 기준 header의 높이값인 80px맨큼 빼주고 마진 탑으로 나머지 간격 조절
+                .header__nav-list {
+                    width: 100%;
+                    height: calc(100% - 80px);
+                    
+                    position: fixed;
+                    left: 0%;
+                    top: 0;
+                    margin-top: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    // mobile/tablet 각 메뉴 간격 조절
+                    ul {
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        li {
+                            text-align: left;
+                            font-family: 'NanumSquare';
+                            font-weight: 800;
+                            font-size: 3rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// 반응형 모바일
+@media (max-width:$mobile) {
+    header {
+        .header__wrapper {
+            width: $grid__mobile;
+        }
+    }
+
+}
