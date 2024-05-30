@@ -1,0 +1,133 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+section#portfolio {
+  background-color: #BDC3C7;
+  padding-top: 100px;
+  height: 20000px;
+  height: 100vh;
+}
+
+section#portfolio .portfolio__wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+section#portfolio .portfolio__wrapper .works {
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+  background: red;
+  margin: 5px;
+  transition: 1s;
+}
+section#portfolio .portfolio__wrapper .works:hover {
+  transform: scale(0.95);
+}
+section#portfolio .portfolio__wrapper .works .works__wrapper {
+  width: 330px;
+  height: 100%;
+}
+section#portfolio .portfolio__wrapper .works .works__wrapper img {
+  width: 100%;
+  height: 100%;
+}
+section#portfolio .portfolio__wrapper .works__title__mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  section#portfolio {
+    background-color: #BDC3C7;
+    padding-top: 80px;
+    height: 100%;
+  }
+  section#portfolio .portfolio__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section#portfolio .portfolio__wrapper .works {
+    width: 48%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    transition: 1s;
+  }
+  section#portfolio .portfolio__wrapper .works img {
+    width: 100%;
+  }
+  section#portfolio .portfolio__wrapper .works:hover {
+    transform: scale(1);
+  }
+  section#portfolio .portfolio__wrapper .works .works__wrapper {
+    width: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  section#portfolio .portfolio__wrapper .works .works__wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  section#portfolio .portfolio__wrapper .works__title__mobile {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  section#portfolio {
+    background-color: #BDC3C7;
+    padding-top: 80px;
+    height: 100%;
+  }
+  section#portfolio .portfolio__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section#portfolio .portfolio__wrapper .works {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    transition: 1s;
+  }
+  section#portfolio .portfolio__wrapper .works img {
+    width: 100%;
+  }
+  section#portfolio .portfolio__wrapper .works:hover {
+    transform: scale(1);
+  }
+  section#portfolio .portfolio__wrapper .works .works__wrapper {
+    width: 380px;
+  }
+  section#portfolio .portfolio__wrapper .works .works__wrapper img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+  }
+  section#portfolio .portfolio__wrapper .works__title__mobile {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=portfolio.css.map */

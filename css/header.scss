@@ -7,6 +7,8 @@ header {
     height: 100px;
     border-bottom: 1px solid $main;
     position: fixed;
+    z-index: 999;
+    background-color: #fff;
 }
 
 header {
@@ -113,8 +115,8 @@ header {
                     height: calc(100% - 80px);
 
                     position: fixed;
-                    // left: -100%;
-                    left: 0%;
+                    left: -100%;
+                    // left: 0%;
                     top: 0;
                     margin-top: 80px;
                     display: flex;
