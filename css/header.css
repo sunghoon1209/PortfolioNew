@@ -79,12 +79,13 @@ header .header__wrapper .header__nav__mobile-tablet {
     display: flex;
     justify-content: end;
   }
-  header .header__wrapper .header__nav__mobile-tablet .header__hbm {
-    cursor: pointer;
-  }
-  header .header__wrapper .header__nav__mobile-tablet .header__hbm img {
+  header .header__wrapper .header__nav__mobile-tablet .header__hbm img,
+  header .header__wrapper .header__nav__mobile-tablet .header__hbm__active img {
     width: 24px;
     height: 24px;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__hbm__active {
+    display: none;
   }
   header .header__wrapper .header__nav__mobile-tablet .header__nav-list {
     width: 100%;

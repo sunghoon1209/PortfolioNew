@@ -101,12 +101,18 @@ header {
                 justify-content: end;
 
                 // 햄버거 메뉴 크기
-                .header__hbm {
-                    cursor: pointer;
+                .header__hbm,
+                .header__hbm__active
+                 {
+                   
                     img {
                         width: 24px;
                         height: 24px;
                     }
+                }
+                
+                .header__hbm__active{
+                    display: none;
                 }
 
                 // mobile/tablet 에서 햄버거 버튼 클릭시 nav 메뉴 
