@@ -79,6 +79,9 @@ header .header__wrapper .header__nav__mobile-tablet {
     display: flex;
     justify-content: end;
   }
+  header .header__wrapper .header__nav__mobile-tablet .header__hbm {
+    cursor: pointer;
+  }
   header .header__wrapper .header__nav__mobile-tablet .header__hbm img {
     width: 24px;
     height: 24px;
@@ -86,6 +89,7 @@ header .header__wrapper .header__nav__mobile-tablet {
   header .header__wrapper .header__nav__mobile-tablet .header__nav-list {
     width: 100%;
     height: calc(100% - 80px);
+    transition: 1s;
     position: fixed;
     left: -100%;
     top: 0;
@@ -113,5 +117,9 @@ header .header__wrapper .header__nav__mobile-tablet {
 @media (max-width: 768px) {
   header .header__wrapper {
     width: 90%;
+  }
+  header .header__wrapper .header__nav__mobile-tablet .header__nav-list {
+    left: 0%;
+    top: 100%;
   }
 }/*# sourceMappingURL=header.css.map */

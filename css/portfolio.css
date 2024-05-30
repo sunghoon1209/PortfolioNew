@@ -28,8 +28,6 @@ section#portfolio .portfolio__wrapper {
 section#portfolio .portfolio__wrapper .works {
   width: 330px;
   height: 200px;
-  border-radius: 10px;
-  background: red;
   margin: 5px;
   transition: 1s;
 }
@@ -64,25 +62,20 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
   }
   section#portfolio .portfolio__wrapper .works {
     width: 48%;
-    border-radius: 10px;
-    background-color: #fff;
     margin-bottom: 40px;
     transition: 1s;
-  }
-  section#portfolio .portfolio__wrapper .works img {
-    width: 100%;
+    height: auto;
   }
   section#portfolio .portfolio__wrapper .works:hover {
     transform: scale(1);
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper {
-    width: 330px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper img {
     width: 100%;
-    height: 100%;
   }
   section#portfolio .portfolio__wrapper .works__title__mobile {
     display: block;
@@ -102,27 +95,22 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   section#portfolio .portfolio__wrapper .works {
-    width: 100%;
-    border-radius: 10px;
-    background-color: #fff;
+    width: 90%;
     margin-bottom: 40px;
     transition: 1s;
-  }
-  section#portfolio .portfolio__wrapper .works img {
-    width: 100%;
+    height: auto;
   }
   section#portfolio .portfolio__wrapper .works:hover {
     transform: scale(1);
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper {
-    width: 380px;
+    width: 100%;
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper img {
     width: 100%;
-    height: 100%;
     min-width: 100%;
   }
   section#portfolio .portfolio__wrapper .works__title__mobile {
