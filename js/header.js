@@ -8,16 +8,30 @@ left 0 인 경우 이는 모바일이므로 top값을 0으로 만들고
 
 document.querySelector('.header__hbm').addEventListener('click', function () {
 
+    // 기기의 너비값을 변수로 지정
     let navList = document.querySelector('.header__nav-list');
-    // navList의  css속성을 가져온 후 left값을 추출 
-    let leftValue = window.getComputedStyle(navList).getPropertyValue('left');
-    // console.log(leftValue);
-
-    if (leftValue === '0px') {
+    let width = window.innerWidth;
+    if ( width < 768) {
+        navList.style.top = "0";
        
-        navList.style.top= "0";
-    } else  {
-        
-        navList.style.left= "0";
+       
+    } else {
+        navList.style.left = "0";
+      
     }
+   
+
+    /*
+    .header__hbm img 의 src를 변수로 저장
+    그 변수가 if ./images/hbm.svg 와 일치하면
+    ./images/xbtn.svg으로 변경하고
+    */
+  
+    // 실행
+   
+
+    // else 일 경우 src를 ./images/hbm.svg 로 변경후
+
+
+    
 });

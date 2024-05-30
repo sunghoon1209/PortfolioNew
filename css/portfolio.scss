@@ -29,21 +29,69 @@ section#portfolio {
             height: 200px;
             margin: 5px;
             transition: 1s;
+            position: relative;
+          
 
             &:hover {
                 transform: scale(0.95);
+
+                &:before {
+                    width: 100%;
+                    
+                }
+                
+                .works__title__pc{
+                    display: block;
+                  
+                }
+            }
+
+            // 박스 위에 마우스 올렸을때 배경
+            &:before {
+                content: "";
+                width: 0%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                transform: translateX(-50%);
+                left: 50%;
+                position: absolute;
+                transition: 1s;
+                // 가상요소가 클릭을 방해하기에 pointer-events: none; 로 배경작용만 하게 함
+                pointer-events: none;
+
 
             }
 
             .works__wrapper {
                 width: 330px;
                 height: 100%;
+               
 
                 img {
                     width: 100%;
                     height: 100%;
 
                 }
+
+            }
+
+            
+            .works__title__pc{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transition: delay 1s;
+                display: none;
+                transform: translate(-50%,-50%);
+               
+                a{
+                    color: #fff;
+                    font-size: 32px;
+                    font-family: 'NanumSquare';
+                    font-weight: 600;
+                }
+
+               
             }
 
 
@@ -51,7 +99,7 @@ section#portfolio {
 
         // 각 작업물의 제목(mobile/tablet전용)
         .works__title__mobile {
-            display: none;
+            display: none;///
         }
     }
 }
@@ -81,8 +129,13 @@ section#portfolio {
                 margin-bottom: 40px;
                 transition: 1s;
                 height: auto;
+
                 &:hover {
                     transform: scale(1);
+                    // 태블릿 이하 사이즈에선 pc 구조의 호버배경 안보이게
+                    &::before{
+                        display: none;
+                    }
                 }
 
                 .works__wrapper {
@@ -94,6 +147,11 @@ section#portfolio {
                         width: 100%;
                         // height: 100%;
 
+                    }
+
+                    // pc외에선 제목 안보이게
+                    .works__title__pc {
+                        display: none;
                     }
                 }
 
@@ -140,7 +198,7 @@ section#portfolio {
             .works {
                 width: 90%;
                 // height: 180px;
-              margin-bottom: 40px;
+                margin-bottom: 40px;
                 transition: 1s;
                 height: auto;
 

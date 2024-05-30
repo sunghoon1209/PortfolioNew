@@ -123,13 +123,16 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    background: #fff;
 
                     // mobile/tablet 각 메뉴 간격 조절
                     ul {
                         height: 50%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        align-content: space-between;
+                       
+                       
 
                         li {
                             text-align: left;

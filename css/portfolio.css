@@ -30,9 +30,27 @@ section#portfolio .portfolio__wrapper .works {
   height: 200px;
   margin: 5px;
   transition: 1s;
+  position: relative;
 }
 section#portfolio .portfolio__wrapper .works:hover {
   transform: scale(0.95);
+}
+section#portfolio .portfolio__wrapper .works:hover:before {
+  width: 100%;
+}
+section#portfolio .portfolio__wrapper .works:hover .works__title__pc {
+  display: block;
+}
+section#portfolio .portfolio__wrapper .works:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  transition: 1s;
+  pointer-events: none;
 }
 section#portfolio .portfolio__wrapper .works .works__wrapper {
   width: 330px;
@@ -41,6 +59,20 @@ section#portfolio .portfolio__wrapper .works .works__wrapper {
 section#portfolio .portfolio__wrapper .works .works__wrapper img {
   width: 100%;
   height: 100%;
+}
+section#portfolio .portfolio__wrapper .works .works__title__pc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: delay 1s;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+section#portfolio .portfolio__wrapper .works .works__title__pc a {
+  color: #fff;
+  font-size: 32px;
+  font-family: "NanumSquare";
+  font-weight: 600;
 }
 section#portfolio .portfolio__wrapper .works__title__mobile {
   display: none;
@@ -69,6 +101,9 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
   section#portfolio .portfolio__wrapper .works:hover {
     transform: scale(1);
   }
+  section#portfolio .portfolio__wrapper .works:hover::before {
+    display: none;
+  }
   section#portfolio .portfolio__wrapper .works .works__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -76,6 +111,9 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper img {
     width: 100%;
+  }
+  section#portfolio .portfolio__wrapper .works .works__wrapper .works__title__pc {
+    display: none;
   }
   section#portfolio .portfolio__wrapper .works__title__mobile {
     display: block;
