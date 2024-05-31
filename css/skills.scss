@@ -14,28 +14,30 @@ section#skills {
     .skills__wrapper {
         width: $grid__pc;
         margin: 0 auto;
-        height: 1000px;
         font-size: 100px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 80px;
-        
+        margin-top: 60px;
+
 
 
     }
 
     // 설명하는 레이아웃 스타일
     .skills {
-        width: 49%;
+        width: 500px;
         height: 200px;
         border-radius: 5px;
         background-color: #fff;
         display: flex;
         align-items: center;
-        gap: 20px;
-        padding: 10px 5px 10px;
-        
+        gap: 24px;
+        padding: 10px 20px;
+
+        // skills 레이아웃간 하단 여백 
+        margin-bottom: 24px;
+
 
         // 기술의 이미지가 들어갈 사진 커버
         .skills__img {
@@ -43,7 +45,7 @@ section#skills {
             height: 100px;
 
             overflow: hidden;
-            border-radius: 50%;
+            border-radius: 5%;
             border: 1px solid #ddd;
 
 
@@ -57,6 +59,127 @@ section#skills {
         .skills__description {
             width: 70%;
             font-size: 18px;
+
+            height: 100px;
         }
     }
+}
+
+// tablet 반응형
+
+@media (max-width:$tablet) {
+    section#skills {
+        padding-top: 80px;
+        height: 100%;
+    }
+
+    section#skills {
+        .skills__wrapper {
+            width: $grid__tablet;
+
+        }
+
+        // 설명하는 레이아웃 스타일
+        .skills {
+            width: 49%;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            gap : 1%;
+            padding: 10px 20px;
+            aspect-ratio: 2.5;
+            height: auto;
+            margin-bottom: 1%;
+
+
+            // 기술의 이미지가 들어갈 사진 커버
+            // .skills__img {
+            //     width: 100%;
+            //     // height: auto;
+
+            //     overflow: hidden;
+            //     border-radius: 5%;
+            //     border: 1px solid #ddd;
+
+
+            //     img {
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            // }
+
+            // // 설명부분 스타일
+            // .skills__description {
+            //     width: 70%;
+            //     font-size: 18px;
+
+            //     height: 100px;
+            // }
+        }
+    }
+
+
+
+}
+
+
+// 모바일 반응형
+
+@media (max-width:$mobile) {
+    section#skills {
+        padding-top: 80px;
+        height: 100%;
+    }
+
+    section#skills {
+        .skills__wrapper {
+            width: $grid__mobile;
+
+        }
+
+        // 설명하는 레이아웃 스타일
+        .skills {
+            width: 100%;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            gap : 1%;
+            padding: 10px 20px;
+            aspect-ratio: 2.5;
+            height: auto;
+            margin-bottom: 3%;
+
+
+            // 기술의 이미지가 들어갈 사진 커버
+            // .skills__img {
+            //     width: 100%;
+            //     // height: auto;
+
+            //     overflow: hidden;
+            //     border-radius: 5%;
+            //     border: 1px solid #ddd;
+
+
+            //     img {
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            // }
+
+            // // 설명부분 스타일
+            // .skills__description {
+            //     width: 70%;
+            //     font-size: 18px;
+
+            //     height: 100px;
+            // }
+        }
+    }
+
+
+
 }
