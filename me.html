@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- script -->
     <script defer src="./js/me.js"></script>
+    <script defer src="./js/header.js"></script>
 </head>
 
 <body>
@@ -21,32 +22,40 @@
         <div class="header__wrapper">
 
             <!-- pc에서 nav메뉴 -->
-            <h1 class="header__logo"><a href="#" alt="로고">Sunghoon</a> </h1>
+            <h1 class="header__logo"><a href="./index.html" alt="로고">Sunghoon</a> </h1>
             <nav class="header__nav__pc">
                 <ul>
                     <li><a href="./portfolio.html">Portfolio</a></li>
                     <li><a href="./me.html">Me</a></li>
                     <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
+
                 </ul>
             </nav>
             <!-- mobile / tablet에서 nav메뉴 -->
             <nav class="header__nav__mobile-tablet">
                 <div class="header__hbm"><img src="./images/hbm.svg" alt="햄버거메뉴"></div>
-            <!-- mobile/tablet에서 햄버거버튼 클릭시  -->
+                <div class="header__hbm__active"><img src="./images/xbtn.svg" alt="메뉴닫기버튼"></div>
+                <!-- mobile/tablet에서 햄버거버튼 클릭시  -->
                 <div class="header__nav-list">
                     <ul>
                         <li><a href="./portfolio.html">Portfolio</a></li>
                         <li><a href="./me.html">Me</a></li>
                         <li><a href="./skills.html">Skills</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
+
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <section id="me">
+            <div class="me__wrapper">1</div>
+        </section>
+        <section id="contact">
+            <div class="contact__wrapper">2</div>
+        </section>
+    </main>
 
 </body>
 

@@ -1,0 +1,58 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: hsl(223, 90%, 95%);
+}
+
+section#skills {
+  padding-top: 100px;
+  height: 1020px;
+  width: 100%;
+}
+
+section#skills .skills__wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  height: 1000px;
+  font-size: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+section#skills .skills {
+  width: 49%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 5px 10px;
+}
+section#skills .skills .skills__img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+section#skills .skills .skills__img img {
+  width: 100px;
+  height: 100px;
+}
+section#skills .skills .skills__description {
+  width: 70%;
+  font-size: 18px;
+}/*# sourceMappingURL=skills.css.map */

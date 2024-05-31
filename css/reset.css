@@ -56,4 +56,15 @@ a {
 * {
 	box-sizing: border-box;
 	outline: none;
+	font-family: 'NanumSquare';
 }
+
+/* 스크롤바 없애기 */
+/* body {
+	-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+ display: none;
+} */
+

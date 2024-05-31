@@ -1,0 +1,62 @@
+@import "./mixin.scss";
+
+// skills 페이지 pc버전
+section#skills {
+
+    padding-top: 100px;
+    height: 1020px;
+    width: 100%;
+
+
+}
+
+section#skills {
+    .skills__wrapper {
+        width: $grid__pc;
+        margin: 0 auto;
+        height: 1000px;
+        font-size: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 80px;
+        
+
+
+    }
+
+    // 설명하는 레이아웃 스타일
+    .skills {
+        width: 49%;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 5px 10px;
+        
+
+        // 기술의 이미지가 들어갈 사진 커버
+        .skills__img {
+            width: 100px;
+            height: 100px;
+
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        // 설명부분 스타일
+        .skills__description {
+            width: 70%;
+            font-size: 18px;
+        }
+    }
+}

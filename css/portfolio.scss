@@ -2,11 +2,11 @@
 
 // 포트폴리오 페이지 pc버전
 section#portfolio {
-    background-color: #BDC3C7;
+
     // 27AE60 
     padding-top: 100px;
-    height: 20000px;
-    height: 100vh;
+    height: 100%;
+    margin-bottom: 100px;
 
 }
 
@@ -15,9 +15,7 @@ section#portfolio {
 
     .portfolio__wrapper {
         width: $grid__pc;
-
         margin: 0 auto;
-        // height: 500px;
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
@@ -30,19 +28,36 @@ section#portfolio {
             margin: 5px;
             transition: 1s;
             position: relative;
-          
+            background-color: #d1d1d1;
+
 
             &:hover {
                 transform: scale(0.95);
 
                 &:before {
                     width: 100%;
-                    
+
                 }
-                
-                .works__title__pc{
+
+                .works__title__pc {
                     display: block;
-                  
+                    opacity: 0;
+                    // 호버시 애니메이션 추가
+                    animation: titleShow 1s forwards;
+                    animation-delay: 0.5s;
+
+                }
+
+                // 제목이 서서히 보이는 애니메이션
+                @keyframes titleShow {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+
                 }
             }
 
@@ -65,7 +80,7 @@ section#portfolio {
             .works__wrapper {
                 width: 330px;
                 height: 100%;
-               
+
 
                 img {
                     width: 100%;
@@ -75,23 +90,23 @@ section#portfolio {
 
             }
 
-            
-            .works__title__pc{
+
+            .works__title__pc {
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transition: delay 1s;
                 display: none;
-                transform: translate(-50%,-50%);
-               
-                a{
+                transform: translate(-50%, -50%);
+
+                a {
                     color: #fff;
                     font-size: 32px;
                     font-family: 'NanumSquare';
                     font-weight: 600;
                 }
 
-               
+
             }
 
 
@@ -99,7 +114,7 @@ section#portfolio {
 
         // 각 작업물의 제목(mobile/tablet전용)
         .works__title__mobile {
-            display: none;///
+            display: none; ///
         }
     }
 }
@@ -132,8 +147,9 @@ section#portfolio {
 
                 &:hover {
                     transform: scale(1);
+
                     // 태블릿 이하 사이즈에선 pc 구조의 호버배경 안보이게
-                    &::before{
+                    &::before {
                         display: none;
                     }
                 }

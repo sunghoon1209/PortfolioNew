@@ -1,0 +1,41 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: hsl(223, 90%, 95%);
+}
+
+section#me {
+  padding-top: 100px;
+  height: 1020px;
+  width: 100%;
+  background-color: green;
+}
+
+section#me .me__wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+section#contact {
+  padding-top: 100px;
+  height: 1020px;
+  margin-bottom: 100px;
+  background-color: red;
+  width: 100%;
+}
+
+section#contact .contact__wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}/*# sourceMappingURL=me.css.map */

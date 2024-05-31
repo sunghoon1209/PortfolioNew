@@ -9,7 +9,11 @@ $mobile :768px;
 $tablet :1023px;
 
 // 주조색
-$main : #27AE60 ;
+$main : #E67E22 ;
+// 배경색
+$bgc : #BDC3C7;
+$bgc : hsl(223, 90%, 95%);
+
 
 // 폰트
 
@@ -29,4 +33,8 @@ $main : #27AE60 ;
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+body{
+    background-color: $bgc;
 }
