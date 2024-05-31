@@ -17,20 +17,60 @@ body {
 
 section#me {
   padding-top: 100px;
-  height: 1020px;
   width: 100%;
-  background-color: green;
 }
 
 section#me .me__wrapper {
   width: 1024px;
   margin: 0 auto;
   margin-top: 60px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+section#me .me__wrapper .me__img-message {
+  width: 100%;
+  display: flex;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  align-items: center;
+  overflow: hidden;
+}
+section#me .me__wrapper .me__img-message .me__img {
+  width: 30%;
+}
+section#me .me__wrapper .me__img-message .me__img .me__img__wrapper {
+  width: 100%;
+}
+section#me .me__wrapper .me__img-message .me__img .me__img__wrapper img {
+  width: 100%;
+  display: block;
+}
+section#me .me__wrapper .me__img-message .me__message {
+  width: 70%;
+  overflow: hidden;
+  padding: 20px 20px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+section#me .me__wrapper .me__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section#me .me__wrapper .me__details div {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  border-radius: 16px;
 }
 
 section#contact {
-  padding-top: 100px;
-  height: 1020px;
   margin-bottom: 100px;
   background-color: red;
   width: 100%;
@@ -39,6 +79,7 @@ section#contact {
 section#contact .contact__wrapper {
   width: 1024px;
   margin: 0 auto;
+  height: 100%;
 }
 
 @media (max-width: 1023px) {

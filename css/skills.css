@@ -57,6 +57,7 @@ section#skills .skills .skills__img img {
 section#skills .skills .skills__description {
   width: 300px;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 @media (max-width: 1023px) {
@@ -91,8 +92,8 @@ section#skills .skills .skills__description {
     border: 1px solid #ddd;
   }
   section#skills .skills .skills__img img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
   section#skills .skills .skills__description {
     width: 60%;
@@ -129,10 +130,6 @@ section#skills .skills .skills__description {
     overflow: hidden;
     border-radius: 5%;
     border: 1px solid #ddd;
-  }
-  section#skills .skills__img img {
-    width: 100%;
-    height: 100%;
   }
   section#skills .skills__description {
     width: 60%;

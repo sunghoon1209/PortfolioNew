@@ -4,9 +4,9 @@
 section#me {
 
     padding-top: 100px;
-    height: 1020px;
     width: 100%;
-    background-color: green;
+    // height: 1024px;
+
 
 }
 
@@ -15,14 +15,83 @@ section#me {
         width: $grid__pc;
         margin: 0 auto;
         margin-top: 60px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 16px;
+
+    }
+
+
+}
+
+// 사진과 메시지영역
+section#me .me__wrapper .me__img-message {
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    align-items: center;
+    overflow: hidden;
+
+
+
+
+    .me__img {
+        width: 30%;
+
+        .me__img__wrapper {
+            width: 100%;
+
+
+            img {
+                width: 100%;
+                display: block;
+
+
+            }
+        }
+    }
+
+    .me__message {
+        width: 70%;
+        overflow: hidden;
+        padding: 20px 20px;
+        line-height: 1.5;
+        font-size: 20px;
     }
 }
+
+// details 박스 모듈화
+section#me {
+    .me__wrapper {
+        .me__details {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+
+            div {
+                display: flex;
+                width: 20%;
+                justify-content: center;
+
+                border-radius: 16px;
+                // height: 100px;
+
+            }
+        }
+    }
+}
+
 
 // contact 영역
 section#contact {
 
-    padding-top: 100px;
-    height: 1020px;
+
     margin-bottom: 100px;
     background-color: red;
     width: 100%;
@@ -34,6 +103,7 @@ section#contact {
     .contact__wrapper {
         width: $grid__pc;
         margin: 0 auto;
+        height: 100%;
 
 
     }
@@ -42,6 +112,7 @@ section#contact {
 
 // tablet 반응형
 @media (max-width:$tablet) {
+
     // me section 영역
     section#me {
         padding-top: 80px;
@@ -78,6 +149,7 @@ section#contact {
 
 // tablet 반응형
 @media (max-width:$mobile) {
+
     // me section 영역
     section#me {
         padding-top: 80px;
@@ -94,7 +166,7 @@ section#contact {
 
     // contatct 영역
     section#contact {
-       
+
         height: 100%;
     }
 
