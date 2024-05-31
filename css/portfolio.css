@@ -27,11 +27,12 @@ section#portfolio .portfolio__wrapper {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 17px;
 }
 section#portfolio .portfolio__wrapper .works {
   width: 330px;
   height: 200px;
-  margin: 5px;
   transition: 1s;
   position: relative;
   background-color: #d1d1d1;
@@ -95,23 +96,22 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
 
 @media (max-width: 1023px) {
   section#portfolio {
-    background-color: #BDC3C7;
     padding-top: 80px;
     height: 100%;
   }
   section#portfolio .portfolio__wrapper {
     width: 95%;
-    margin: 0 auto;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 40px;
+    gap: 2%;
   }
   section#portfolio .portfolio__wrapper .works {
     width: 48%;
-    margin-bottom: 40px;
     transition: 1s;
     height: auto;
+    margin-bottom: 40px;
   }
   section#portfolio .portfolio__wrapper .works:hover {
     transform: scale(1);
@@ -138,21 +138,20 @@ section#portfolio .portfolio__wrapper .works__title__mobile {
 }
 @media (max-width: 768px) {
   section#portfolio {
-    background-color: #BDC3C7;
     padding-top: 80px;
     height: 100%;
   }
   section#portfolio .portfolio__wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin-top: 20px;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   section#portfolio .portfolio__wrapper .works {
-    width: 90%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 60px;
     transition: 1s;
     height: auto;
   }

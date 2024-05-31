@@ -25,6 +25,7 @@ section#me {
 section#me .me__wrapper {
   width: 1024px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 section#contact {
@@ -38,4 +39,42 @@ section#contact {
 section#contact .contact__wrapper {
   width: 1024px;
   margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  section#me {
+    padding-top: 80px;
+    height: 100vh;
+  }
+  section#me .me__wrapper {
+    width: 95%;
+    display: flex;
+    margin-top: 40px;
+  }
+  section#contact {
+    padding-top: 80px;
+    height: 100%;
+  }
+  section#contact .contact__wrapper {
+    width: 95%;
+    display: flex;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  section#me {
+    padding-top: 80px;
+    height: 100vh;
+  }
+  section#me .me__wrapper {
+    width: 95%;
+    margin-top: 20px;
+  }
+  section#contact {
+    height: 100%;
+  }
+  section#contact .contact__wrapper {
+    width: 95%;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=me.css.map */

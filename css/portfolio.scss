@@ -19,14 +19,15 @@ section#portfolio {
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 60px;
         // justify-content: space-between;
+        gap: 17px;
 
         // 작품하나씩 들어가는 박스
         .works {
             width: 330px;
             height: 200px;
-            margin: 5px;
-            transition: 1s;
+           transition: 1s;
             position: relative;
             background-color: #d1d1d1;
 
@@ -123,7 +124,7 @@ section#portfolio {
 
 @media (max-width:$tablet) {
     section#portfolio {
-        background-color: #BDC3C7;
+       
         padding-top: 80px;
         // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
         height: 100%;
@@ -132,18 +133,19 @@ section#portfolio {
     section#portfolio {
         .portfolio__wrapper {
             width: $grid__tablet;
-            margin: 0 auto;
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            margin-top: 40px;
+            gap: 2%;
 
             // 작품하나씩 들어가는 박스
             .works {
                 width: 48%;
-                margin-bottom: 40px;
                 transition: 1s;
                 height: auto;
+                margin-bottom: 40px;
+              
 
                 &:hover {
                     transform: scale(1);
@@ -190,12 +192,11 @@ section#portfolio {
 
 @media (max-width:$mobile) {
     section#portfolio {
-        background-color: #BDC3C7;
+        
         // 27AE60 
         padding-top: 80px;
         // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
-        // height: 100vh;
-        // overflow: hidden;
+      
         height: 100%;
     }
 
@@ -204,17 +205,18 @@ section#portfolio {
 
         .portfolio__wrapper {
             width: $grid__mobile;
-            margin: 0 auto;
+            margin-top: 20px;
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+           
 
             // 작품하나씩 들어가는 박스
             .works {
-                width: 90%;
+                width: 100%;
                 // height: 180px;
-                margin-bottom: 40px;
+                margin-bottom: 60px;
                 transition: 1s;
                 height: auto;
 
