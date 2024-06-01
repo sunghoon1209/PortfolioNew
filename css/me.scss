@@ -5,9 +5,8 @@ section#me {
 
     padding-top: 100px;
     width: 100%;
-    // height: 1024px;
-
-
+    margin-bottom: 20px;
+ 
 }
 
 section#me {
@@ -21,6 +20,7 @@ section#me {
         align-items: center;
         background-color: #fff;
         border-radius: 16px;
+       
 
     }
 
@@ -61,7 +61,9 @@ section#me .me__wrapper .me__img-message {
         overflow: hidden;
         padding: 20px 20px;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: 24px;
+        text-align: justify;
+        letter-spacing: -1px;
     }
 }
 
@@ -91,10 +93,8 @@ section#me {
 // contact 영역
 section#contact {
 
-
-    margin-bottom: 100px;
-    background-color: red;
     width: 100%;
+    background-color: red;
 
 
 }
@@ -116,7 +116,7 @@ section#contact {
     // me section 영역
     section#me {
         padding-top: 80px;
-        height: 100vh;
+        
     }
 
     section#me {
@@ -124,7 +124,15 @@ section#contact {
             width: $grid__tablet;
             display: flex;
             margin-top: 40px;
+            height: auto;
 
+        }
+    }
+
+    // #me 내부 사진과 메시지 영역
+    section#me .me__wrapper .me__img-message {
+        .me__message {
+            font-size: 20px;
         }
     }
 
@@ -147,13 +155,13 @@ section#contact {
 
 
 
-// tablet 반응형
+// mobile 반응형
 @media (max-width:$mobile) {
 
     // me section 영역
     section#me {
         padding-top: 80px;
-        height: 100vh;
+        
     }
 
     section#me {
@@ -161,6 +169,20 @@ section#contact {
             width: $grid__tablet;
             margin-top: 20px;
 
+
+        }
+
+
+    }
+
+    // #me 내부 사진과 메시지 영역
+    section#me .me__wrapper .me__img-message {
+
+      
+
+        // 메세지영역
+        .me__message {
+            font-size: 16px;
         }
     }
 
@@ -174,6 +196,7 @@ section#contact {
         .contact__wrapper {
             width: $grid__tablet;
             margin-top: 20px;
+            height: auto;
 
         }
     }

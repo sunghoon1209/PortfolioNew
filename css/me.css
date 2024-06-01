@@ -18,6 +18,7 @@ body {
 section#me {
   padding-top: 100px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 section#me .me__wrapper {
@@ -55,7 +56,9 @@ section#me .me__wrapper .me__img-message .me__message {
   overflow: hidden;
   padding: 20px 20px;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 24px;
+  text-align: justify;
+  letter-spacing: -1px;
 }
 
 section#me .me__wrapper .me__details {
@@ -71,9 +74,8 @@ section#me .me__wrapper .me__details div {
 }
 
 section#contact {
-  margin-bottom: 100px;
-  background-color: red;
   width: 100%;
+  background-color: red;
 }
 
 section#contact .contact__wrapper {
@@ -85,12 +87,15 @@ section#contact .contact__wrapper {
 @media (max-width: 1023px) {
   section#me {
     padding-top: 80px;
-    height: 100vh;
   }
   section#me .me__wrapper {
     width: 95%;
     display: flex;
     margin-top: 40px;
+    height: auto;
+  }
+  section#me .me__wrapper .me__img-message .me__message {
+    font-size: 20px;
   }
   section#contact {
     padding-top: 80px;
@@ -105,11 +110,13 @@ section#contact .contact__wrapper {
 @media (max-width: 768px) {
   section#me {
     padding-top: 80px;
-    height: 100vh;
   }
   section#me .me__wrapper {
     width: 95%;
     margin-top: 20px;
+  }
+  section#me .me__wrapper .me__img-message .me__message {
+    font-size: 16px;
   }
   section#contact {
     height: 100%;
@@ -117,5 +124,6 @@ section#contact .contact__wrapper {
   section#contact .contact__wrapper {
     width: 95%;
     margin-top: 20px;
+    height: auto;
   }
 }/*# sourceMappingURL=me.css.map */
