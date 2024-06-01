@@ -37,7 +37,8 @@ section#me .me__wrapper .me__img-message {
   background-color: #fff;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  justify-content: space-between;
 }
 section#me .me__wrapper .me__img-message .me__img {
   width: 30%;
@@ -50,13 +51,14 @@ section#me .me__wrapper .me__img-message .me__img .me__img__wrapper img {
   display: block;
 }
 section#me .me__wrapper .me__img-message .me__message {
-  width: 70%;
+  width: 65%;
   overflow: hidden;
-  padding: 20px 20px;
+  padding: 10px;
   line-height: 1.5;
   font-size: 24px;
   text-align: justify;
   letter-spacing: -1px;
+  font-weight: 300;
 }
 
 section#me .me__wrapper .me__details {
@@ -79,6 +81,7 @@ section#me .me__wrapper .me__details div ul {
   border-radius: 16px;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: 300;
 }
 section#me .me__wrapper .me__details div ul li:nth-child(1) {
   font-weight: bold;
@@ -107,6 +110,9 @@ section#contact .contact__wrapper {
     margin-top: 40px;
     height: auto;
   }
+  section#me .me__wrapper .me__img-message {
+    margin-bottom: 20px;
+  }
   section#me .me__wrapper .me__img-message .me__message {
     font-size: 20px;
   }
@@ -119,6 +125,30 @@ section#contact .contact__wrapper {
     display: flex;
     margin-top: 40px;
   }
+  section#me .me__wrapper .me__details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  section#me .me__wrapper .me__details div {
+    display: flex;
+    width: 32%;
+    justify-content: center;
+    border-radius: 16px;
+  }
+  section#me .me__wrapper .me__details div ul {
+    text-align: justify;
+    height: auto;
+    padding: 20px;
+    border-radius: 16px;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  section#me .me__wrapper .me__details div ul li:nth-child(1) {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 @media (max-width: 768px) {
   section#me {
@@ -128,11 +158,25 @@ section#contact .contact__wrapper {
     width: 95%;
     margin-top: 20px;
   }
+  section#me .me__wrapper .me__img-message {
+    margin-bottom: 10px;
+  }
   section#me .me__wrapper .me__img-message .me__img .me__img__wrapper img {
     min-width: 140px;
   }
   section#me .me__wrapper .me__img-message .me__message {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  section#me .me__wrapper .me__details div ul {
+    padding: 10px;
     font-size: 14px;
+    text-wrap: wrap;
+    font-weight: 400;
+  }
+  section#me .me__wrapper .me__details div ul li:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 6px;
   }
   section#contact {
     height: 100%;

@@ -33,7 +33,8 @@ section#me .me__wrapper .me__img-message {
     background-color: #fff;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    justify-content: space-between;
 
 
 
@@ -55,17 +56,18 @@ section#me .me__wrapper .me__img-message {
     }
 
     .me__message {
-        width: 70%;
+        width: 65%;
         overflow: hidden;
-        padding: 20px 20px;
+        padding: 10px;
         line-height: 1.5;
         font-size: 24px;
         text-align: justify;
         letter-spacing: -1px;
+        font-weight: 300;
     }
 }
 
-// details 박스 모듈화
+// deatils 부분
 section#me {
     .me__wrapper {
         .me__details {
@@ -91,7 +93,8 @@ section#me {
                     border-radius: 16px;
                     line-height: 1.2;
                     font-size: 18px;
-                  
+                    font-weight: 300;
+
                     li:nth-child(1) {
                         font-weight: bold;
                         font-size: 24px;
@@ -146,8 +149,11 @@ section#contact {
 
     // #me 내부 사진과 메시지 영역
     section#me .me__wrapper .me__img-message {
+        margin-bottom: 20px;
+
         .me__message {
             font-size: 20px;
+            
         }
     }
 
@@ -165,6 +171,45 @@ section#contact {
 
         }
     }
+
+    // deatils 부분
+    section#me {
+        .me__wrapper {
+            .me__details {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    width: 32%;
+                    justify-content: center;
+
+
+                    border-radius: 16px;
+
+
+                    ul {
+
+                        text-align: justify;
+                        height: auto;
+                        padding: 20px;
+                        border-radius: 16px;
+                        line-height: 1.2;
+                        font-size: 14px;
+
+                        li:nth-child(1) {
+                            font-weight: bold;
+                            font-size: 24px;
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -192,6 +237,7 @@ section#contact {
 
     // #me 내부 사진과 메시지 영역
     section#me .me__wrapper .me__img-message {
+        margin-bottom: 10px;
 
         // 사진영역
         .me__img {
@@ -207,7 +253,40 @@ section#contact {
 
         // 메세지영역
         .me__message {
-            font-size: 14px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+
+    }
+
+    // deatils 부분
+    section#me {
+        .me__wrapper {
+            .me__details {
+              
+
+                div {
+                   
+
+
+                    ul {
+                        padding: 10px;
+                        font-size: 14px;
+                        text-wrap: wrap;
+                        font-weight: 400;
+                        
+
+                        li:nth-child(1) {
+
+                            font-size: 16px;
+                            margin-bottom: 6px;
+                        }
+                    }
+
+                }
+            }
         }
     }
 
