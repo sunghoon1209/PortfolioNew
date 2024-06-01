@@ -6,7 +6,7 @@ section#me {
     padding-top: 100px;
     width: 100%;
     margin-bottom: 20px;
- 
+
 }
 
 section#me {
@@ -14,13 +14,11 @@ section#me {
         width: $grid__pc;
         margin: 0 auto;
         margin-top: 60px;
-        height: 400px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #fff;
-        border-radius: 16px;
-       
+        // border-radius: 16px;
 
     }
 
@@ -31,12 +29,11 @@ section#me {
 section#me .me__wrapper .me__img-message {
     width: 100%;
     display: flex;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-
+    border-radius: 16px;
+    background-color: #fff;
     align-items: center;
     overflow: hidden;
-
+    margin-bottom: 100px;
 
 
 
@@ -50,6 +47,7 @@ section#me .me__wrapper .me__img-message {
             img {
                 width: 100%;
                 display: block;
+
 
 
             }
@@ -75,14 +73,31 @@ section#me {
             display: flex;
             justify-content: space-between;
 
-
             div {
                 display: flex;
-                width: 20%;
+                width: 320px;
                 justify-content: center;
 
+
                 border-radius: 16px;
-                // height: 100px;
+
+
+                ul {
+                    width: 100%;
+                    background-color: #fff;
+                    text-align: justify;
+                    height: 200px;
+                    padding: 20px;
+                    border-radius: 16px;
+                    line-height: 1.2;
+                    font-size: 18px;
+                  
+                    li:nth-child(1) {
+                        font-weight: bold;
+                        font-size: 24px;
+                        margin-bottom: 8px;
+                    }
+                }
 
             }
         }
@@ -116,7 +131,7 @@ section#contact {
     // me section 영역
     section#me {
         padding-top: 80px;
-        
+
     }
 
     section#me {
@@ -161,7 +176,7 @@ section#contact {
     // me section 영역
     section#me {
         padding-top: 80px;
-        
+
     }
 
     section#me {
@@ -178,11 +193,21 @@ section#contact {
     // #me 내부 사진과 메시지 영역
     section#me .me__wrapper .me__img-message {
 
-      
+        // 사진영역
+        .me__img {
+
+            .me__img__wrapper {
+
+                img {
+                    min-width: 140px;
+                }
+            }
+        }
+
 
         // 메세지영역
         .me__message {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
