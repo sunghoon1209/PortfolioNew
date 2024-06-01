@@ -33,7 +33,7 @@ section#me .me__wrapper .me__img-message {
     background-color: #fff;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     justify-content: space-between;
 
 
@@ -79,7 +79,7 @@ section#me {
                 display: flex;
                 width: 320px;
                 justify-content: center;
-
+                
 
                 border-radius: 16px;
 
@@ -93,7 +93,7 @@ section#me {
                     border-radius: 16px;
                     line-height: 1.2;
                     font-size: 18px;
-                    font-weight: 300;
+                    font-weight: 400;
 
                     li:nth-child(1) {
                         font-weight: bold;
@@ -112,7 +112,7 @@ section#me {
 section#contact {
 
     width: 100%;
-    background-color: red;
+    margin-bottom: 40px;   
 
 
 }
@@ -123,6 +123,78 @@ section#contact {
         margin: 0 auto;
         height: 100%;
 
+
+
+        // 왼쪽 그림영역      
+
+        .contact__form-container {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 40px;
+
+            // 폼요소 위에 간단한 소개
+            .contact__form-title{
+                font-size: 20px;
+                text-align: center;
+                margin-bottom: 40px;
+
+            }
+            .contact__form-wrap {
+                display: flex;
+                flex-direction: column;              
+                margin: 0 auto;
+                width: 80%;
+                
+               
+                // 전송버튼
+                .contact__form-submit {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        padding: 10px 20px;
+                        background-color: #fff;
+                        border: 1px solid #111;
+                        border-radius: 5px;
+                        font-weight: 600;
+                    }
+                }
+
+                .contact__form {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    input,
+                    textarea
+                     {
+                        width:100%;
+                        background-color: #fff;
+                        border: 1px solid #111;
+                        resize: none;
+                        padding: 10px;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 400;
+
+                    }
+
+                    label{
+                        width: 20%;
+                        font-weight: 600;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                 
+                }
+
+
+
+            }
+        }
 
     }
 }
@@ -153,7 +225,7 @@ section#contact {
 
         .me__message {
             font-size: 20px;
-            
+
         }
     }
 
@@ -265,10 +337,9 @@ section#contact {
     section#me {
         .me__wrapper {
             .me__details {
-              
 
                 div {
-                   
+
 
 
                     ul {
@@ -276,7 +347,7 @@ section#contact {
                         font-size: 14px;
                         text-wrap: wrap;
                         font-weight: 400;
-                        
+
 
                         li:nth-child(1) {
 
