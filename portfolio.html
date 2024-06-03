@@ -27,9 +27,9 @@
 
             <!-- pc에서 nav메뉴 -->
             <h1 class="header__logo"><a href="./index.html" alt="로고">Sunghoon</a> </h1>
-            <nav class="header__nav__pc">
+            <nav class="header__nav__pc ">
                 <ul>
-                    <li><a href="./portfolio.html">Works</a></li>
+                    <li><a class="header__nav-list__pc-checked" href="./portfolio.html">Works</a></li>
 
                     <li><a href="./skills.html">Skills</a></li>
 
@@ -42,7 +42,7 @@
                 <!-- mobile/tablet에서 햄버거버튼 클릭시  -->
                 <div class="header__nav-list">
                     <ul>
-                        <li><a href="./portfolio.html">Works</a></li>
+                        <li><a class=".header__nav-list__pc-checked" href="./portfolio.html" >Works</a></li>
 
                         <li><a href="./skills.html">Skills</a></li>
 
@@ -60,7 +60,7 @@
                 <!-- 1 -->
                 <div class="works">
                     <div class="works__wrapper">
-                        <a href="#"><img src="./images/portfolio.jpg" alt="구버전 포트폴리오 이미지"></a>
+                        <a href="#" onclick="popUpOpen()"><img src="./images/portfolio.jpg" alt="구버전 포트폴리오 이미지"></a>
                         <p class="works__title__pc"><a href="#">Portfolio</a></p>
                     </div>
                     <p class="works__title__mobile">Portfolio</p>
@@ -140,7 +140,7 @@
                 <!-- 11 -->
                 <div class="works">
                     <div class="works__wrapper">
-                        <a href="#"> <img src="./images/3d.png" alt="3d페이지 썸네일"></a>
+                        <a href="#" onclick="popUpOpen()"> <img src="./images/3d.png" alt="3d페이지 썸네일"></a>
                         <p class="works__title__pc"><a href="#">3D Site</a></p>
                     </div>
                     <p class="works__title__mobile">3D Site</p>
@@ -169,9 +169,39 @@
                     </div>
                     <p class="works__title__mobile">Battlenet</p>
                 </div>
+            </div>
+            <!-- 팝업창 마크업 -->
+            <div class="pop-up__wrapper">
+                <!-- 닫기 버튼 -->
+                <!-- <div class="pop-up__xbtn"><img src="./images/xbtn.svg" alt="팝업창닫기버튼"></div> -->
+                <!-- 내용 -->
+                <div class="pop-up__content">
+
+                    <div class="pop-up__content__info-img">
+                        <!-- 프로젝트 정보 -->
+                        <div class="pop-up__content__info">
+                            <h2>포트폴리오</h2>
+                            <p></p>
+                            <p><strong>Skills:</strong> HTML, SCSS, JavaScript</p>
+                            <p><strong>URL:</strong> 이프로젝트는</p>
+                            <p><strong>Github:</strong> 이프로젝트는</p>
+                        </div>
+                        <!-- 프로젝트 페이지 썸네일  -->
+                        <div class="pop-up__img__wrap">
+                            <img src="./images/groundX.jpg" alt="포트폴리오 썸네일">
+                        </div>
+                    </div>
+                    <!-- 프로젝스 소개 -->
+                    <div class="pop-up__content__description"> 기존에 작업했던 프로젝트에 대해서 스스로 피드백을 한 결과,</div>
+                    <!-- 팝업창버튼 -->
+                    <div class="pop-up__button">
+                        <button class="pop-up__button__list" onclick=" popUpClose()" >List</button>
+                        <button class="pop-up__button__next">Next</button>
+                    </div>
 
 
 
+                </div>
             </div>
         </section>
     </main>

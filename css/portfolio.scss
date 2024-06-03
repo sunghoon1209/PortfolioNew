@@ -23,13 +23,14 @@ section#portfolio {
         // justify-content: space-between;
         gap: 17px;
 
+
         // 작품하나씩 들어가는 박스
         .works {
             width: 330px;
             height: 200px;
-           transition: 1s;
+            transition: 1s;
             position: relative;
-            background-color: #d1d1d1;
+
 
 
             &:hover {
@@ -120,11 +121,118 @@ section#portfolio {
     }
 }
 
+// 포트폴리오 pc 팝업
+section#portfolio {
+    .pop-up__wrapper {
+        width: 100%;
+        background-color: $bgc;
+        height: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        right: 0;
+        display: none;
+
+        
+    }
+
+}
+
+//   // 팝업창 내용들
+section#portfolio .pop-up__wrapper {
+   
+    .pop-up__content {
+       
+        width: $grid__pc;
+        margin: 0 auto;
+        // height: 800px;
+        background-color: #fff;
+        box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
+        margin-top: 40px;
+        padding: 60px 120px;
+
+        .pop-up__content__info-img {
+            display: flex;
+            margin-bottom: 140px;
+
+            .pop-up__content__info{
+                width: 50%;
+                 // 프로젝트 제목
+                h2 {
+                    text-align: left;
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    position: relative;
+    
+                    &::before {
+                        content: "";
+                        width: 40px;
+                        height: 4px;
+                        background-color: #111;
+                        position: absolute;
+                        top: -20px;
+                    }
+
+                  
+                }
+            }
+            
+
+            
+            // 프로젝트 이미지
+            .pop-up__img__wrap {
+               width: 50%;
+                height: 200px;
+                overflow: hidden;
+                box-shadow: 0 30px 60px rgba(17, 20, 39, 0.5);
+
+
+                img {
+                    width: 100%;
+
+                    display: block;
+                }
+            }
+        }
+
+        // 프로젝트에 대한 설명
+        .pop-up__content__description{
+            background-color: $bgc;
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            overflow-y: scroll;
+            
+        }
+
+        // 버튼
+        .pop-up__button{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+           
+            button{
+                border: none;
+                width: 100px;
+                height: 60px;
+                padding: 10px 30px;
+                border-radius: 8px;
+               display: block;
+            }
+
+        }
+
+    }
+}
+
 // tablet 반응형
 
 @media (max-width:$tablet) {
     section#portfolio {
-       
+
         padding-top: 80px;
         // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
         height: 100%;
@@ -145,7 +253,7 @@ section#portfolio {
                 transition: 1s;
                 height: auto;
                 margin-bottom: 40px;
-              
+
 
                 &:hover {
                     transform: scale(1);
@@ -192,11 +300,11 @@ section#portfolio {
 
 @media (max-width:$mobile) {
     section#portfolio {
-        
+
         // 27AE60 
         padding-top: 80px;
         // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
-      
+
         height: 100%;
     }
 
@@ -210,7 +318,7 @@ section#portfolio {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-           
+
 
             // 작품하나씩 들어가는 박스
             .works {
