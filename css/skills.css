@@ -99,10 +99,28 @@ section#skills .tools__item {
   section#skills .skills__wrapper {
     width: 95%;
     display: flex;
+    flex-direction: column;
     margin-top: 40px;
-    justify-content: space-between;
   }
-  section#skills .skills__item {
+  section#skills .skills__wrapper .skills__wrapper .skills__button-container {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+  }
+  section#skills .skills__wrapper .skills__wrapper .skills__button-container .skills__button {
+    background-color: #fff;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  section#skills .skills__item,
+  section#skills .tools__item {
     width: 48%;
     border-radius: 5px;
     background-color: #fff;
@@ -113,8 +131,12 @@ section#skills .tools__item {
     aspect-ratio: 2.5;
     height: auto;
     margin-bottom: 1%;
+    background-color: #fff;
   }
-  section#skills .skills__item .skills__img {
+  section#skills .skills__item .skills__img,
+  section#skills .skills__item .tools__img,
+  section#skills .tools__item .skills__img,
+  section#skills .tools__item .tools__img {
     width: 30%;
     height: auto;
     aspect-ratio: 1;
@@ -122,14 +144,23 @@ section#skills .tools__item {
     border-radius: 5%;
     border: 1px solid #ddd;
   }
-  section#skills .skills__item .skills__img img {
+  section#skills .skills__item .skills__img img,
+  section#skills .skills__item .tools__img img,
+  section#skills .tools__item .skills__img img,
+  section#skills .tools__item .tools__img img {
     width: 80%;
     height: 80%;
   }
-  section#skills .skills__item .skills__description {
+  section#skills .skills__item .skills__description,
+  section#skills .skills__item .tools__description,
+  section#skills .tools__item .skills__description,
+  section#skills .tools__item .tools__description {
     width: 60%;
     font-size: 18px;
     height: auto;
+  }
+  section#skills .tools__item {
+    display: none;
   }
 }
 @media (max-width: 768px) {
