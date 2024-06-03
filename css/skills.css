@@ -16,8 +16,7 @@ body {
 }
 
 section#skills {
-  padding-top: 100px;
-  height: 1020px;
+  padding: 100px 0;
   width: 100%;
 }
 
@@ -25,12 +24,32 @@ section#skills .skills__wrapper {
   width: 1024px;
   margin: 0 auto;
   font-size: 100px;
+  margin-top: 20px;
+}
+section#skills .skills__wrapper .skills__container {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 60px;
 }
-section#skills .skills {
+section#skills .skills__wrapper .skills__button-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+section#skills .skills__wrapper .skills__button-container .skills__button {
+  background-color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+section#skills .skills__item,
+section#skills .tools__item {
   width: 500px;
   height: 200px;
   border-radius: 5px;
@@ -40,7 +59,10 @@ section#skills .skills {
   padding: 10px 20px;
   justify-content: space-between;
 }
-section#skills .skills .skills__img {
+section#skills .skills__item .skills__img,
+section#skills .skills__item .tools__img,
+section#skills .tools__item .skills__img,
+section#skills .tools__item .tools__img {
   width: 100px;
   height: 100px;
   display: flex;
@@ -50,14 +72,23 @@ section#skills .skills .skills__img {
   border-radius: 12px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
-section#skills .skills .skills__img img {
+section#skills .skills__item .skills__img img,
+section#skills .skills__item .tools__img img,
+section#skills .tools__item .skills__img img,
+section#skills .tools__item .tools__img img {
   width: 80px;
   height: 80px;
 }
-section#skills .skills .skills__description {
+section#skills .skills__item .skills__description,
+section#skills .skills__item .tools__description,
+section#skills .tools__item .skills__description,
+section#skills .tools__item .tools__description {
   width: 300px;
   font-size: 18px;
   line-height: 1.5;
+}
+section#skills .tools__item {
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -71,7 +102,7 @@ section#skills .skills .skills__description {
     margin-top: 40px;
     justify-content: space-between;
   }
-  section#skills .skills {
+  section#skills .skills__item {
     width: 48%;
     border-radius: 5px;
     background-color: #fff;
@@ -83,7 +114,7 @@ section#skills .skills .skills__description {
     height: auto;
     margin-bottom: 1%;
   }
-  section#skills .skills .skills__img {
+  section#skills .skills__item .skills__img {
     width: 30%;
     height: auto;
     aspect-ratio: 1;
@@ -91,11 +122,11 @@ section#skills .skills .skills__description {
     border-radius: 5%;
     border: 1px solid #ddd;
   }
-  section#skills .skills .skills__img img {
+  section#skills .skills__item .skills__img img {
     width: 80%;
     height: 80%;
   }
-  section#skills .skills .skills__description {
+  section#skills .skills__item .skills__description {
     width: 60%;
     font-size: 18px;
     height: auto;
@@ -110,7 +141,7 @@ section#skills .skills .skills__description {
     width: 90%;
     margin-top: 20px;
   }
-  section#skills .skills {
+  section#skills .skills__item {
     width: 100%;
     border-radius: 5px;
     background-color: #fff;

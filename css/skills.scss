@@ -1,13 +1,10 @@
-@import "./mixin.scss";
+@import "./variable.scss";
 
 // skills 페이지 pc버전
 section#skills {
 
-    padding-top: 100px;
-    height: 1020px;
+    padding: 100px 0;    
     width: 100%;
-
-
 }
 
 section#skills {
@@ -15,16 +12,44 @@ section#skills {
         width: $grid__pc;
         margin: 0 auto;
         font-size: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        // justify-content: space-between;
-        gap: 24px;
-        margin-top: 60px;
+        margin-top: 20px;
+
+
+        .skills__container {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            gap: 24px;
+        }
 
     }
 
+    // skills/tools 선택하는 버튼
+    .skills__wrapper .skills__button-container {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+
+        .skills__button {
+            background-color: #fff;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 600;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+    
+    }
+
     // 설명하는 레이아웃 스타일
-    .skills {
+    .skills__item,
+    .tools__item {
         width: 500px;
         height: 200px;
         border-radius: 5px;
@@ -33,11 +58,13 @@ section#skills {
         align-items: center;
         padding: 10px 20px;
         justify-content: space-between;
+       
 
 
 
         // 기술의 이미지가 들어갈 사진 커버
-        .skills__img {
+        .skills__img,
+        .tools__img {
             width: 100px;
             height: 100px;
             display: flex;
@@ -45,9 +72,8 @@ section#skills {
             align-items: center;
             overflow: hidden;
             border-radius: 12px;
-            // border: 1px solid $main;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-            
+
 
 
             img {
@@ -58,13 +84,17 @@ section#skills {
         }
 
         // 설명부분 스타일
-        .skills__description {
+        .skills__description,
+        .tools__description {
             width: 300px;
             font-size: 18px;
             line-height: 1.5;
 
-          
+
         }
+    }
+    .tools__item{
+        display: none;
     }
 }
 
@@ -87,7 +117,7 @@ section#skills {
         }
 
         // 설명하는 레이아웃 스타일
-        .skills {
+        .skills__item {
 
             width: 48%;
             border-radius: 5px;
@@ -99,7 +129,7 @@ section#skills {
             aspect-ratio: 2.5;
             height: auto;
             margin-bottom: 1%;
-            
+
 
 
             // 기술의 이미지가 들어갈 사진 커버 
@@ -124,7 +154,7 @@ section#skills {
                 font-size: 18px;
 
                 height: auto;
-                
+
             }
         }
     }
@@ -150,7 +180,7 @@ section#skills {
         }
 
         // 설명하는 레이아웃 스타일
-        .skills {
+        .skills__item {
             width: 100%;
             border-radius: 5px;
             background-color: #fff;

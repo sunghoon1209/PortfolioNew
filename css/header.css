@@ -29,18 +29,21 @@ header .header__wrapper {
   height: inherit;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   line-height: 100px;
 }
 header .header__wrapper .header__logo {
   width: 50%;
 }
 header .header__wrapper .header__logo a {
-  font-family: "SBAggroB";
-  font-size: 2rem;
+  font-family: "Pacifico";
+  font-size: 40px;
+  letter-spacing: normal;
   font-weight: 800;
+  color: HSL(253, 90%, 55%);
 }
 header .header__wrapper nav.header__nav__pc {
-  width: 50%;
+  width: 15%;
 }
 header .header__wrapper nav.header__nav__pc ul {
   display: flex;

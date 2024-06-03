@@ -1,7 +1,7 @@
 // header 영역 관련된 스크립트
 
 // 현재 열린 페이지 확인후 해당 li안 a태그의 색과 크기 변경
-let currentPage = document.querySelector('.header__nav__pc ul li:nth-child(3) a');
+let currentPage = document.querySelector('.header__nav__pc ul li:nth-child(2) a');
 currentPage.classList.add("header__nav-list__pc-checked");
 
 // document.addEventListener('DOMContentLoaded', function() {
@@ -31,7 +31,7 @@ document.querySelectorAll('.header__nav__pc ul li a').forEach(item => {
 
 
 // 반응형에서 해당 상위 작업
-let currentPageMobile = document.querySelector('.header__nav-list ul li:nth-child(3) a');
+let currentPageMobile = document.querySelector('.header__nav-list ul li:nth-child(2) a');
 currentPageMobile.classList.add("header__nav-list__mobile-checked");
 
 // document.addEventListener('DOMContentLoaded', function() {
@@ -43,40 +43,7 @@ currentPageMobile.classList.add("header__nav-list__mobile-checked");
 //         this에 header__nav-list__pc-checked 추가
 //     마우스 이탈시 원래대로
 
-/* 
-// 버튼 클릭시 
-skills 버튼 클릭시
- 
- function buttonClick () {}
-  클래스에 skills__button-skills 을 갖고 있는 지 확인 후
-  갖고 있으면 
-  "skills__item" style. display="block"
-  "tools__item" style.display="none"
 
-  그렇지 않으면
-    "skills__item" style. display="none"
-  "tools__item" style.display="block"
 
-*/
-/* 버튼 */
-function buttonClick(event) {
-    let button = event.target;
-    let skillsItems = document.querySelectorAll('.skills__item');
-    let toolsItems = document.querySelectorAll('.tools__item');
 
-    if (button.classList.contains('skills__button-skills'))
-        {
-            skillsItems.forEach(item=> item.style.display="flex");
-            toolsItems.forEach(item=> item.style.display="none");
-            ;
-
-        }
-    else{
-        skillsItems.forEach(item=> item.style.display="none");
-        toolsItems.forEach(item=> item.style.display="flex");
-      
-
-    };
-    
-};
 

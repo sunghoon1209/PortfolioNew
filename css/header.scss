@@ -1,6 +1,6 @@
 // PC버전 header
 
-@import "./mixin.scss";
+@import "./variable.scss";
 
 header {
     width: 100%;
@@ -19,6 +19,7 @@ header {
         height: inherit;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
         line-height: 100px;
 
         // 로고 
@@ -27,15 +28,19 @@ header {
 
 
             a {
-                font-family: 'SBAggroB';
-                font-size: 2rem;
+                // font-family: 'SBAggroB';
+                font-family: "Pacifico";
+                font-size: 40px;
+                letter-spacing: normal;
                 font-weight: 800;
+                color: HSL(253, 90%, 55%);
+                
             }
         }
 
         // nav메뉴
         nav.header__nav__pc {
-            width: 50%;
+            width: 15%;
 
             ul {
                 display: flex;
