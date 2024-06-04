@@ -10,369 +10,152 @@ section#me {
 }
 
 section#me {
-    .me__wrapper {
-        width: $grid__pc;
+    .card {
+        width: 560px;
         margin: 0 auto;
         margin-top: 60px;
-
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
         // border-radius: 16px;
-
-    }
-
-
-}
-
-// 사진과 메시지영역
-section#me .me__wrapper .me__img-message {
-    width: 100%;
-    display: flex;
-    border-radius: 16px;
-    background-color: #fff;
-    align-items: center;
-    overflow: hidden;
-    margin-bottom: 20px;
-    justify-content: space-between;
-
-
-
-    .me__img {
-        width: 30%;
-
-        .me__img__wrapper {
-            width: 100%;
-
-
-            img {
-                width: 100%;
-                display: block;
-
-
-
-            }
-        }
-    }
-
-    .me__message {
-        width: 65%;
-        overflow: hidden;
-        padding: 10px;
-        line-height: 1.5;
-        font-size: 24px;
-        text-align: justify;
-        letter-spacing: -1px;
-        font-weight: 300;
-    }
-}
-
-// deatils 부분
-section#me {
-    .me__wrapper {
-        .me__details {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            div {
-                display: flex;
-                width: 320px;
-                justify-content: center;
-                
-
-                border-radius: 16px;
-
-
-                ul {
-                    width: 100%;
-                    background-color: #fff;
-                    text-align: justify;
-                    height: 200px;
-                    padding: 20px;
-                    border-radius: 16px;
-                    line-height: 1.2;
-                    font-size: 18px;
-                    font-weight: 400;
-
-                    li:nth-child(1) {
-                        font-weight: bold;
-                        font-size: 24px;
-                        margin-bottom: 8px;
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-
-// contact 영역
-section#contact {
-
-    width: 100%;
-    margin-bottom: 40px;   
-
-
-}
-
-section#contact {
-    .contact__wrapper {
-        width: $grid__pc;
-        margin: 0 auto;
-        height: 100%;
-
-
-
-        // 왼쪽 그림영역      
-
-        .contact__form-container {
-            width: 100%;
-            height: auto;
-            background-color: #fff;
-            border-radius: 16px;
-            padding: 40px;
-
-            // 폼요소 위에 간단한 소개
-            .contact__form-title{
-                font-size: 20px;
-                text-align: center;
-                margin-bottom: 40px;
-
-            }
-            .contact__form-wrap {
-                display: flex;
-                flex-direction: column;              
-                margin: 0 auto;
-                width: 80%;
-                
-               
-                // 전송버튼
-                .contact__form-submit {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    button{
-                        padding: 10px 20px;
-                        background-color: #fff;
-                        border: 1px solid #111;
-                        border-radius: 5px;
-                        font-weight: 600;
-                    }
-                }
-
-                .contact__form {
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 20px;
-
-                    input,
-                    textarea
-                     {
-                        width:100%;
-                        background-color: #fff;
-                        border: 1px solid #111;
-                        resize: none;
-                        padding: 10px;
-                        border-radius: 5px;
-                        font-size: 16px;
-                        font-weight: 400;
-
-                    }
-
-                    label{
-                        width: 20%;
-                        font-weight: 600;
-                        font-size: 20px;
-                        margin-bottom: 10px;
-                    }
-
-                 
-                }
-
-
-
-            }
-        }
-
-    }
-}
-
-
-// tablet 반응형
-@media (max-width:$tablet) {
-
-    // me section 영역
-    section#me {
-        padding-top: 80px;
-
-    }
-
-    section#me {
-        .me__wrapper {
-            width: $grid__tablet;
-            display: flex;
-            margin-top: 40px;
-            height: auto;
-
-        }
-    }
-
-    // #me 내부 사진과 메시지 영역
-    section#me .me__wrapper .me__img-message {
-        margin-bottom: 20px;
-
-        .me__message {
-            font-size: 20px;
-
-        }
-    }
-
-    // contatct 영역
-    section#contact {
-        padding-top: 80px;
-        height: 100%;
-    }
-
-    section#contact {
-        .contact__wrapper {
-            width: $grid__tablet;
-            display: flex;
-            margin-top: 40px;
-
-        }
-    }
-
-    // deatils 부분
-    section#me {
-        .me__wrapper {
-            .me__details {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-
-                div {
-                    display: flex;
-                    width: 32%;
-                    justify-content: center;
-
-
-                    border-radius: 16px;
-
-
-                    ul {
-
-                        text-align: justify;
-                        height: auto;
-                        padding: 20px;
-                        border-radius: 16px;
-                        line-height: 1.2;
-                        font-size: 14px;
-
-                        li:nth-child(1) {
-                            font-weight: bold;
-                            font-size: 24px;
-                            margin-bottom: 8px;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-
-}
-
-
-
-
-// mobile 반응형
-@media (max-width:$mobile) {
-
-    // me section 영역
-    section#me {
-        padding-top: 80px;
-
-    }
-
-    section#me {
-        .me__wrapper {
-            width: $grid__tablet;
-            margin-top: 20px;
-
-
-        }
-
-
-    }
-
-    // #me 내부 사진과 메시지 영역
-    section#me .me__wrapper .me__img-message {
-        margin-bottom: 10px;
-
-        // 사진영역
-        .me__img {
-
-            .me__img__wrapper {
+        background-color: #fff;
+        padding: 60px 10px 0px 10px;
+        box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
+        border-radius: 8px;
+
+        // 이미지
+        .card__img-name {
+            margin-bottom: 20px;
+
+            .card__img__wrap {
+                width: 180px;
+                height: 180px;
+                overflow: hidden;
+                border-radius: 50%;
+                // box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                margin-bottom: 16px;
 
                 img {
-                    min-width: 140px;
+                    width: 100%;
+                    height: auto;
                 }
+            }
+
+            .card__name {
+                font-size: 24px;
+                text-align: center;
+                font-weight: 800;
+                position: relative;
+
+
+                p {
+                    color: $main;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 8px;
+                }
+
+
             }
         }
 
+        // about 부분
+        .card__info__wrap {
 
-        // 메세지영역
-        .me__message {
-            font-size: 16px;
-            font-weight: 400;
-        }
+            // 각종 타이틀 부분
+            h2 {
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 8px;
+            }
 
+            .card__info__about {
+                margin-bottom: 60px;
 
+                p {
+                    line-height: 1.5;
+                }
+            }
 
-    }
+            // 경험 부분
+            .card__info__experience {
+                margin-bottom: 60px;
 
-    // deatils 부분
-    section#me {
-        .me__wrapper {
-            .me__details {
+                .experience__item {
+                    margin-left: 60px;
+                    border-left: 2px solid #111;
+                    height: 80px;
+                    position: relative;
+                    padding-left: 10px;
 
-                div {
+                    &::before {
+                        content: "2024.3";
+                        position: absolute;
+                        font-size: 12px;
+                        left: -60px;
+                        top: 0px;
+                        font-weight: 800;
 
-
-
-                    ul {
-                        padding: 10px;
-                        font-size: 14px;
-                        text-wrap: wrap;
-                        font-weight: 400;
-
-
-                        li:nth-child(1) {
-
-                            font-size: 16px;
-                            margin-bottom: 6px;
-                        }
                     }
 
                 }
             }
+
+            // contatc 부분
+            .card__info__contact{
+                margin-bottom: 60px;
+                
+                div{
+                    line-height: 1.5;
+                    margin-bottom: 6px;
+                    i{
+                        margin-right: 30px;
+                      
+                    }
+                }
+            }
+
+            // 현재 탭된 메뉴 외에 안보여줌
+            .card__info__hide{
+                display: none;
+            }
+
+
         }
-    }
 
-    // contatct 영역
-    section#contact {
+        // 하단 텝매뉴
+        .card__tab {
+            display: flex;
+            justify-content: space-between;
+            width: 105%;
+            height: 60px;
+            line-height: 60px;
 
-        height: 100%;
-    }
+            div {
+                width: calc(100% / 3);
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                
 
-    section#contact {
-        .contact__wrapper {
-            width: $grid__tablet;
-            margin-top: 20px;
-            height: auto;
+            }
 
+            .card__tab__checked{
+                border-bottom: 2px solid $main;
+                box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
         }
+
+
+
     }
+
+
+
+
 }

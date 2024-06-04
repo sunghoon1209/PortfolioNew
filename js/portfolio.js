@@ -6,9 +6,11 @@ function popUpOpen (){
 
 function popUpOpen(){
     let popUp = document.querySelector(".pop-up__wrapper");
-    popUp.style.display="block";
+    
+  
+    popUp.classList.add('pop-up__wrapper__show');
 };
 function popUpClose(){
     let popUp = document.querySelector(".pop-up__wrapper");
-    popUp.style.display="none";
+    popUp.classList.remove('pop-up__wrapper__show');
 };
