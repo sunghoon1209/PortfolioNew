@@ -62,3 +62,14 @@ let tabActive = document.querySelector('.card__tab__active');
 
 };
 
+// 카드클릭시 회전됨
+let card = document.querySelector('.card');
+card.addEventListener("click",function(){
+    document.querySelector('.card__inner').style.transform = "rotateY(180deg)";
+});
+
+// 페이지가 로드 된 후 몇초 후에 시작되게
+
+// setTimeout(function(){
+//     document.querySelector('.card__inner').style.transform = "rotateY(180deg)";
+// }, 2000);

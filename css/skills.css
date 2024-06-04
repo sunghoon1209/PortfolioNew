@@ -58,6 +58,7 @@ section#skills .tools__item {
   align-items: center;
   padding: 10px 20px;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 section#skills .skills__item .skills__img,
 section#skills .skills__item .tools__img,

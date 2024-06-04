@@ -60,51 +60,58 @@
         <!-- me 영역 -->
         <section id="me">
             <div class="card">
-                
-                <div class="card__img-name">
-                    <div class="card__img__wrap">
-                        <img src="./images/me_img.jpg" alt="">
+                <div class="card__inner">
+                    <!-- 메인화면 카드 앞면 -->
+                    <div class="card__front">
+                        <h2>Click Me</h2>
+                        
                     </div>
-                    <div class="card__name">주성훈<p>웹 퍼블리셔</p>
-                    </div>
-                </div>
-                <div class="card__info__wrap">
-                    <div class="card__info__about card__info__active">
-                        <h2 class="card__title">About</h2>
-                        <p>안녕하세요. 신입 웹 퍼블리셔 주성훈입니다.<br>
-                            웹 접근성과 웹 표준성을 준수하는<br>
-                            웹 페이지를 만들기 위해 노력하고,<br>
-                            최상의 사용자경험을 위해 깊은 고민을 합니다.<br>
-                            
-                        </p>
-                    </div>
-                    <div class="card__info__experience ">
-                        <h2>Experience </h2>
-                            <div class="experience__item">
-                                <div class="experience__item__title">이젠 컴퓨터 아카데미</div>
-                                <div class="experience__item__description">
-                                    NCS 현장수요에 맞는 디지털디자인
-                                    (웹퍼블리셔)<br>전문가 양성과정 수료
-                                </div>
-
+                    <!-- 카드 뒷면 -->
+                    <div class="card__back">
+                        <div class="card__img-name">
+                            <div class="card__img__wrap">
+                                <img src="./images/me_img.jpg" alt="">
                             </div>
-                        
+                            <div class="card__name">주성훈
+                                <p>웹 퍼블리셔</p>
+                            </div>
+                        </div>
+                        <div class="card__info__wrap">
+                            <div class="card__info__about card__info__active">
+                                <h2 class="card__title">About</h2>
+                                <p>안녕하세요. 신입 웹 퍼블리셔 주성훈입니다.<br>
+                                    웹 접근성과 웹 표준성을 준수하는<br>
+                                    웹 페이지를 만들기 위해 노력하고,<br>
+                                    최상의 사용자경험을 위해 깊은 고민을 합니다.<br>
+                                </p>
+                            </div>
+                            <div class="card__info__experience ">
+                                <h2>Experience </h2>
+                                <div class="experience__item">
+                                    <div class="experience__item__title">이젠 컴퓨터 아카데미</div>
+                                    <div class="experience__item__description">
+                                        NCS 현장수요에 맞는 디지털디자인
+                                        <br> (웹퍼블리셔)<br>전문가 양성과정 수료
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__info__contact">
+                                <h2>Contact</h2>
+                                <div class="contact__location"><i class="fa-solid fa-location-dot"></i> <span>경기도 안양시 만안구 석수동</span></div>
+                                <div class="contact__tel"><i class="fa-solid fa-phone"></i><span>010-5793-9412</span></div>
+                                <div class="contact__email"><i class="fa-solid fa-envelope"></i><span>sunghoon.developer@gmail.com</span></div>
+                            </div>
+                        </div>
+                        <div class="card__tab ">
+                            <button class="card__tab__about card__tab__active" onclick="aboutClick()">About</button>
+                            <button class="card__tab__experience" onclick="experienceClick()">Experience</button>
+                            <button class="card__tab__contact" onclick="contactClick()">Contact</button>
+                        </div>
                     </div>
-                    <div class="card__info__contact">
-                        <h2>Contatct</h2>
-                        <div class="contact__location"><i class="fa-solid fa-location-dot"></i> <span>경기도 안양시 만안구 석수동</span></div>
-                        <div class="contact__tel"><i class="fa-solid fa-phone"></i><span>010-5793-9412</span></div>
-                        <div class="contact__email"><i class="fa-solid fa-envelope"></i><span>sunghoon.developer@gmail.com</span></div>
-                        
-                    </div>
+                   
                 </div>
-                <div class="card__tab ">
-                    <button class="card__tab__about card__tab__active" onclick="aboutClick()">About</button>
-                    <button class="card__tab__experience" onclick=" experienceClick()">Experience</button>
-                    <button class="card__tab__contact" onclick=" contactClick()">Contact</button>
-                </div>
-
             </div>
+            
 
         </section>
 
