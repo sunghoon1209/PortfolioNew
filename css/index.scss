@@ -10,41 +10,41 @@ section#me {
     height: 100vh;
     // background:url("../images/bg.jpg") no-repeat center/cover;
     background-color: $bgc;
-
-
+    overflow: hidden;
 
 }
 
 section#me {
-    overflow: hidden;
+
     .card {
         width: 560px;
         // height: 600px; // 카드 높이를 고정/
         margin: 0 auto;
         perspective: 1000px;
         margin-top: 100px;
-    
+
         .card__inner {
             width: 100%;
             height: 100%;
             transition: transform 1s;
             transform-style: preserve-3d;
         }
-    
-          
-        .card__front, .card__back {
+
+
+        .card__front,
+        .card__back {
             position: absolute;
             width: 100%;
-           overflow: hidden;
+            overflow: hidden;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden; // Safari/
             border-radius: 8px;
             box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
-            background-color:#fff;
+            background-color: #fff;
             // padding: 60px 10px 0px 10px;
-         
+
         }
-    
+
         .card__front {
             z-index: 2; // 카드 앞면을 뒷면보다 위로 설정
             transform: rotateY(0deg);
@@ -54,18 +54,19 @@ section#me {
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            h2{
+
+            h2 {
                 // font-family: "Pacifico";/
                 font-size: 80px;
                 letter-spacing: normal;
                 font-weight: 800;
                 color: $main;
-               
 
-              
+
+
             }
         }
-    
+
         .card__back {
             transform: rotateY(180deg);
             display: flex;
@@ -73,10 +74,10 @@ section#me {
             align-items: center;
             justify-content: center; // 내용물 중앙 정렬 
             height: 600px;
-            
-            justify-content: space-between;          
-    
-    
+
+            justify-content: space-between;
+
+
 
 
 
@@ -126,12 +127,13 @@ section#me {
         .card__info__wrap {
             width: 400px;
             height: 200px;
+
             // 각종 타이틀 부분
             h2 {
                 font-size: 20px;
                 font-weight: 800;
                 margin-bottom: 12px;
-                
+
             }
 
             .card__info__about {
@@ -231,4 +233,21 @@ section#me {
 
 
 
+}
+
+// 태블릿 반응형
+@media (max-width:$tablet) {}
+
+// 모바일 반응형
+@media (max-width:$mobile) {
+    section#me {
+        padding-top: 40px;
+        width: 100%;
+        margin: 0 auto;
+
+        .card {
+            width: 80%;
+        }
+       
+    }
 }

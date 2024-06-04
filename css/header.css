@@ -109,7 +109,6 @@ header .header__wrapper .header__nav__mobile-tablet {
     display: flex;
   }
   header .header__wrapper .header__logo a {
-    font-family: "SBAggroB";
     font-size: 1.5rem;
     font-weight: 800;
   }
