@@ -1,11 +1,17 @@
 @import "./variable.scss";
 
 // me 페이지 pc버전
+
 section#me {
 
     padding-top: 100px;
     width: 100%;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    height: 100vh;
+    // background: url("../images/bg.jpg") no-repeat center/cover;
+    background-color: $bgc;
+
+    
 
 }
 
@@ -19,10 +25,11 @@ section#me {
         flex-direction: column;
         align-items: center;
         // border-radius: 16px;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 1);
         padding: 60px 10px 0px 10px;
         box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
         border-radius: 8px;
+        
 
         // 이미지
         .card__img-name {
@@ -36,11 +43,13 @@ section#me {
                 // box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
                 box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
                 margin-bottom: 16px;
+                
 
                 img {
                     width: 100%;
                     height: auto;
                 }
+               
             }
 
             .card__name {
@@ -63,7 +72,7 @@ section#me {
 
         // about 부분
         .card__info__wrap {
-
+            width: 400px;
             // 각종 타이틀 부분
             h2 {
                 font-size: 20px;
@@ -73,7 +82,7 @@ section#me {
 
             .card__info__about {
                 margin-bottom: 60px;
-
+                display: none;
                 p {
                     line-height: 1.5;
                 }
@@ -82,7 +91,7 @@ section#me {
             // 경험 부분
             .card__info__experience {
                 margin-bottom: 60px;
-
+                display: none;
                 .experience__item {
                     margin-left: 60px;
                     border-left: 2px solid #111;
@@ -106,7 +115,7 @@ section#me {
             // contatc 부분
             .card__info__contact{
                 margin-bottom: 60px;
-                
+                display: none;
                 div{
                     line-height: 1.5;
                     margin-bottom: 6px;
@@ -118,8 +127,8 @@ section#me {
             }
 
             // 현재 탭된 메뉴 외에 안보여줌
-            .card__info__hide{
-                display: none;
+            .card__info__active{
+                display: block;
             }
 
 
@@ -133,17 +142,20 @@ section#me {
             height: 60px;
             line-height: 60px;
 
-            div {
+            button {
                 width: calc(100% / 3);
                 text-align: center;
                 font-size: 24px;
                 font-weight: bold;
+                border: none;
+                background-color: #fff;
+                cursor: pointer;
                 
 
             }
 
-            .card__tab__checked{
-                border-bottom: 2px solid $main;
+            .card__tab__active{
+                border-bottom: 5px solid $main;
                 box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                 box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;

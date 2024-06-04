@@ -18,7 +18,8 @@ body {
 section#me {
   padding-top: 100px;
   width: 100%;
-  margin-bottom: 20px;
+  height: 100vh;
+  background-color: #f5f6f9;
 }
 
 section#me .card {
@@ -29,7 +30,7 @@ section#me .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 60px 10px 0px 10px;
   box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
   border-radius: 8px;
@@ -61,6 +62,9 @@ section#me .card .card__img-name .card__name p {
   font-weight: 600;
   margin-top: 8px;
 }
+section#me .card .card__info__wrap {
+  width: 400px;
+}
 section#me .card .card__info__wrap h2 {
   font-size: 20px;
   font-weight: 800;
@@ -68,12 +72,14 @@ section#me .card .card__info__wrap h2 {
 }
 section#me .card .card__info__wrap .card__info__about {
   margin-bottom: 60px;
+  display: none;
 }
 section#me .card .card__info__wrap .card__info__about p {
   line-height: 1.5;
 }
 section#me .card .card__info__wrap .card__info__experience {
   margin-bottom: 60px;
+  display: none;
 }
 section#me .card .card__info__wrap .card__info__experience .experience__item {
   margin-left: 60px;
@@ -92,6 +98,7 @@ section#me .card .card__info__wrap .card__info__experience .experience__item::be
 }
 section#me .card .card__info__wrap .card__info__contact {
   margin-bottom: 60px;
+  display: none;
 }
 section#me .card .card__info__wrap .card__info__contact div {
   line-height: 1.5;
@@ -100,8 +107,8 @@ section#me .card .card__info__wrap .card__info__contact div {
 section#me .card .card__info__wrap .card__info__contact div i {
   margin-right: 30px;
 }
-section#me .card .card__info__wrap .card__info__hide {
-  display: none;
+section#me .card .card__info__wrap .card__info__active {
+  display: block;
 }
 section#me .card .card__tab {
   display: flex;
@@ -110,14 +117,17 @@ section#me .card .card__tab {
   height: 60px;
   line-height: 60px;
 }
-section#me .card .card__tab div {
+section#me .card .card__tab button {
   width: 33.3333333333%;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
-section#me .card .card__tab .card__tab__checked {
-  border-bottom: 2px solid #ff7f0e;
+section#me .card .card__tab .card__tab__active {
+  border-bottom: 5px solid #ff7f0e;
   box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
