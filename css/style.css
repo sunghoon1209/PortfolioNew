@@ -2,4 +2,7 @@
 @import "./header.css";
 @import "./portfolio.css";
 @import "./index.css";
-@import "./skills.css";/*# sourceMappingURL=style.css.map */
+@import "./skills.css";
+body {
+  overflow-y: scroll;
+}/*# sourceMappingURL=style.css.map */

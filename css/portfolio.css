@@ -286,7 +286,6 @@ section#portfolio .pop-up__wrapper .pop-up__content .pop-up__button button {
 @media (max-width: 768px) {
   section#portfolio {
     padding-top: 80px;
-    height: 100%;
   }
   section#portfolio .portfolio__wrapper {
     width: 90%;
@@ -327,7 +326,7 @@ section#portfolio .pop-up__wrapper .pop-up__content .pop-up__button button {
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__content__info-img {
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__content__info-img .pop-up__content__info {
     width: 100%;
@@ -340,7 +339,7 @@ section#portfolio .pop-up__wrapper .pop-up__content .pop-up__button button {
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__content__info-img .pop-up__content__info p {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 14px;
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__content__info-img .pop-up__content__info p span {
@@ -359,6 +358,8 @@ section#portfolio .pop-up__wrapper .pop-up__content .pop-up__button button {
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__content__description {
     font-size: 16px;
+    height: 140px;
+    margin-bottom: 20px;
   }
   section#portfolio .pop-up__wrapper .pop-up__content .pop-up__button button {
     width: 50px;
