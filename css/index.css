@@ -244,6 +244,9 @@ section#me .card .card__tab .card__tab__active {
     margin-bottom: 4px;
     font-size: 16px;
   }
+  section#me .card .card__info__wrap .card__info__contact .contact__email {
+    font-size: 14px;
+  }
   section#me .card .card__tab {
     height: 40px;
     line-height: 40px;
