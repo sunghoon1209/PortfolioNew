@@ -7,10 +7,11 @@ section#me {
     padding-top: 100px;
     width: 100%;
     // margin-bottom: 20px;
-    
+    height: 100vh;
+    overflow: hidden;
     // background:url("../images/bg.jpg") no-repeat center/cover;
     background-color: $bgc;
-    overflow: hidden;
+
 
 }
 
@@ -41,6 +42,7 @@ section#me {
             border-radius: 8px;
             box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
             background-color: #fff;
+            height: 600px;
             // padding: 60px 10px 0px 10px;
 
         }
@@ -48,7 +50,7 @@ section#me {
         .card__front {
             z-index: 2; // 카드 앞면을 뒷면보다 위로 설정
             transform: rotateY(0deg);
-            height: 600px;
+
             text-align: center;
             display: flex;
             justify-content: center;
@@ -72,8 +74,7 @@ section#me {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; // 내용물 중앙 정렬 
-            height: 600px;
+            justify-content: center; // 내용물 중앙 정렬         
 
             justify-content: space-between;
 
@@ -84,7 +85,7 @@ section#me {
             // 이미지
             .card__img-name {
                 margin-bottom: 20px;
-                margin-top: 20px;
+                margin-top: 60px;
 
                 .card__img__wrap {
                     width: 180px;
@@ -241,13 +242,138 @@ section#me {
 // 모바일 반응형
 @media (max-width:$mobile) {
     section#me {
+        height: 100vh;
+        overflow: hidden;
         padding-top: 40px;
         width: 100%;
         margin: 0 auto;
 
         .card {
-            width: 80%;
+            width: 70%;
+
+            .card__front,
+            .card__back {
+                height: 560px;
+
+            }
+
+            .card__back {
+                transform: rotateY(180deg);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; // 내용물 중앙 정렬         
+
+                justify-content: space-between;
+
+
+
+
+
+                // 이미지
+                .card__img-name {
+                    margin-bottom: 18px;
+                    margin-top: 80px;
+
+                    .card__img__wrap {
+                        width: 140px;
+                        height: 140px;
+                        margin-bottom: 14px;
+
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+
+                    .card__name {
+                        font-size: 20px;
+
+                        p {
+                            font-size: 16px;
+                            margin-top: 6px;
+                        }
+
+                    }
+                }
+            }
+
         }
-       
+
+        // about 부분
+        .card {
+            .card__info__wrap {
+                width: 70%;
+                height: 180px;
+
+
+                // 각종 타이틀 부분
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+
+                }
+
+                .card__info__about {
+
+
+                    p {
+                        line-height: 1.5;
+                        font-size: 16px;
+                    }
+                }
+
+                // 경험 부분
+                .card__info__experience {
+                    .experience__item {
+                        font-size: 16px;
+
+                        &::before {
+                            font-size: 14px;
+
+                        }
+
+                    }
+                }
+
+                // contatc 부분
+                .card__info__contact {
+
+                    div {
+
+                        margin-bottom: 4px;
+                        font-size: 16px;
+
+                    }
+                }
+
+            }
+            // 하단 텝매뉴
+            .card__tab {
+                
+                height: 40px;
+                line-height: 40px;
+              
+    
+                button {
+                 
+                    font-size: 20px;
+                 
+    
+                }
+    
+                .card__tab__active {
+                    border-bottom: 3px solid $main;
+                  
+                }
+            }
+        }
+
+
+
+
+
     }
 }

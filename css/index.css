@@ -18,8 +18,9 @@ body {
 section#me {
   padding-top: 100px;
   width: 100%;
-  background-color: #f5f6f9;
+  height: 100vh;
   overflow: hidden;
+  background-color: #f5f6f9;
 }
 
 section#me .card {
@@ -44,11 +45,11 @@ section#me .card .card__back {
   border-radius: 8px;
   box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
   background-color: #fff;
+  height: 600px;
 }
 section#me .card .card__front {
   z-index: 2;
   transform: rotateY(0deg);
-  height: 600px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -67,12 +68,11 @@ section#me .card .card__back {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
   justify-content: space-between;
 }
 section#me .card .card__back .card__img-name {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 section#me .card .card__back .card__img-name .card__img__wrap {
   width: 180px;
@@ -177,11 +177,77 @@ section#me .card .card__tab .card__tab__active {
 
 @media (max-width: 768px) {
   section#me {
+    height: 100vh;
+    overflow: hidden;
     padding-top: 40px;
     width: 100%;
     margin: 0 auto;
   }
   section#me .card {
-    width: 80%;
+    width: 70%;
+  }
+  section#me .card .card__front,
+  section#me .card .card__back {
+    height: 560px;
+  }
+  section#me .card .card__back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  section#me .card .card__back .card__img-name {
+    margin-bottom: 18px;
+    margin-top: 80px;
+  }
+  section#me .card .card__back .card__img-name .card__img__wrap {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 14px;
+  }
+  section#me .card .card__back .card__img-name .card__img__wrap img {
+    width: 100%;
+    height: auto;
+  }
+  section#me .card .card__back .card__img-name .card__name {
+    font-size: 20px;
+  }
+  section#me .card .card__back .card__img-name .card__name p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  section#me .card .card__info__wrap {
+    width: 70%;
+    height: 180px;
+  }
+  section#me .card .card__info__wrap h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  section#me .card .card__info__wrap .card__info__about p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  section#me .card .card__info__wrap .card__info__experience .experience__item {
+    font-size: 16px;
+  }
+  section#me .card .card__info__wrap .card__info__experience .experience__item::before {
+    font-size: 14px;
+  }
+  section#me .card .card__info__wrap .card__info__contact div {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  section#me .card .card__tab {
+    height: 40px;
+    line-height: 40px;
+  }
+  section#me .card .card__tab button {
+    font-size: 20px;
+  }
+  section#me .card .card__tab .card__tab__active {
+    border-bottom: 3px solid #ff7f0e;
   }
 }/*# sourceMappingURL=index.css.map */
