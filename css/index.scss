@@ -255,7 +255,11 @@ section#me {
                 height: 560px;
 
             }
-
+            .card__front{
+                h2{
+                    font-size: 48px;
+                }
+            }
             .card__back {
                 transform: rotateY(180deg);
                 display: flex;
@@ -272,7 +276,7 @@ section#me {
                 // 이미지
                 .card__img-name {
                     margin-bottom: 18px;
-                    margin-top: 80px;
+                    margin-top: 40px;
 
                     .card__img__wrap {
                         width: 140px;
@@ -304,8 +308,9 @@ section#me {
         // about 부분
         .card {
             .card__info__wrap {
-                width: 70%;
-                height: 180px;
+                width: 80%;
+                height: 160px;
+               
 
 
                 // 각종 타이틀 부분
@@ -358,7 +363,7 @@ section#me {
     
                 button {
                  
-                    font-size: 20px;
+                    font-size: 16px;
                  
     
                 }

@@ -191,6 +191,9 @@ section#me .card .card__tab .card__tab__active {
   section#me .card .card__back {
     height: 560px;
   }
+  section#me .card .card__front h2 {
+    font-size: 48px;
+  }
   section#me .card .card__back {
     transform: rotateY(180deg);
     display: flex;
@@ -201,7 +204,7 @@ section#me .card .card__tab .card__tab__active {
   }
   section#me .card .card__back .card__img-name {
     margin-bottom: 18px;
-    margin-top: 80px;
+    margin-top: 40px;
   }
   section#me .card .card__back .card__img-name .card__img__wrap {
     width: 140px;
@@ -220,8 +223,8 @@ section#me .card .card__tab .card__tab__active {
     margin-top: 6px;
   }
   section#me .card .card__info__wrap {
-    width: 70%;
-    height: 180px;
+    width: 80%;
+    height: 160px;
   }
   section#me .card .card__info__wrap h2 {
     font-size: 18px;
@@ -246,7 +249,7 @@ section#me .card .card__tab .card__tab__active {
     line-height: 40px;
   }
   section#me .card .card__tab button {
-    font-size: 20px;
+    font-size: 16px;
   }
   section#me .card .card__tab .card__tab__active {
     border-bottom: 3px solid #ff7f0e;
