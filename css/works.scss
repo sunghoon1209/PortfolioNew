@@ -4,11 +4,8 @@
 
 // 포트폴리오 페이지 pc버전
 section#portfolio {
-
     // 27AE60 
     padding-top: 100px;
-    height: 100%;
-    margin-bottom: 100px;
 
 }
 
@@ -22,8 +19,9 @@ section#portfolio {
         display: flex;
         flex-wrap: wrap;
         margin-top: 60px;
-        // justify-content: space-between;
+
         gap: 17px;
+
 
 
         // 작품하나씩 들어가는 박스
@@ -123,173 +121,138 @@ section#portfolio {
             display: none; ///
         }
     }
+
+    // 작업물들 있는 영역 없애줌
+    .portfolio__wrapper--hide {
+        display: none;
+    }
 }
 
 // 포트폴리오 pc 팝업
 section#portfolio {
-    .pop-up__wrapper {
+    .popup {
         width: 100%;
-        background-color: $bgc;
-        height: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        right: 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        pointer-events: none;
-
+        background-color: #fff;
+        display: none;
     }
 
-    .pop-up__wrapper__show {
-        opacity: 1;
+    .popup--show {
         display: block;
-        visibility: visible;
-        pointer-events: auto;
-        transition: opacity 1s ease-in-out;
 
     }
 
 }
 
-//   // 팝업창 내용들
-section#portfolio .pop-up__wrapper {
+//   // 팝업창 틀
+section#portfolio .popup {
 
-    .pop-up__content {
-        
+    background-color: $bgc;
+
+    // 팝업 내용
+    .popup__content {
+        background-color: #fff;
         width: $grid__pc;
         margin: 0 auto;
-        // height: 800px;
-        background-color: #fff;
-        box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
-        margin-top: 40px;
-        padding: 40px 80px;
-        height: auto;
-         // 제목
-        .pop-up__title__container {
-            h2 {
-                text-align: left;
-                font-size: 32px;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    width: 40px;
-                    height: 4px;
-                    background-color: #111;
-                    position: absolute;
-                    top: -20px;
-                }
-
-            }
-
-            
-            .popup__info-subtitle {
-                font-size: 20px;
-                color: #d5d5d5;
-                margin: 10px 0 30px 0;
-
-            }
-        }       
-
-
-        .pop-up__content__info-img {
-            display: flex;
-            margin-bottom: 70px;
-
-
-            .pop-up__content__info {
-                width: 50%;
-               
-
-                // 프로젝트 제목
-
-
-            }
-
-            // 제목외에 정보들
-            p {
-                height: 33%;
-                width: 90%;
-                margin-bottom: 20px;
-                font-size: 20px;
-                font-weight: 800;
-
-                span {
-                    width: 100%;
-                    font-weight: 400;
-                    display: block;
-                    font-size: 16px;
-                    margin-top: 10px;
-                    word-wrap: break-word;
-                    overflow-wrap: break-word;
-                    word-break: break-all;
-
-                }
-            }
-
-        }
-
-
-
-        // 프로젝트 이미지
-        .pop-up__img__wrap {
-            width: 50%;
-            height: 240px;
-            overflow: hidden;
-            box-shadow: 0 30px 60px rgba(17, 20, 39, 0.5);
-
-
-
-            img {
-                width: 100%;
-
-                display: block;
-            }
-        }
-    }
-
-    // 프로젝트에 대한 설명
-    .pop-up__content__description {
-        background-color: $bgc;
-        width: 100%;
-        height: 200px;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 40px;
-        overflow-y: scroll;
+        font-size: 16px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         line-height: 1.5;
-        font-size: 18px;
-        // text-indent: 18px;
         text-align: justify;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        word-break: break-all;
 
-    }
+        // 각 항목별 여백
+        >div {
+            margin-top: 16px;
 
-    // 버튼
-    .pop-up__button {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+           
+        }
 
-        button {
-            border: none;
-            width: 80px;
-            height: 40px;
-            border-radius: 8px;
+        // popup 소제목들 
+        div strong {
+            font-size: 18px;
+            font-weight: 800;
+        }
 
-            background-color: #000;
-            font-size: 24px;
-            text-align: center;
-            color: #fff;
+        // 제목
+        .popup__title {
+            text-align: left;
+            font-size: 32px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 40px;
+                height: 4px;
+                background-color: #111;
+                position: absolute;
+                top: -20px;
+            }
+        }
+
+        // subtitle
+        .popup__subtitle {
+            text-align: left;
+            font-size: 18px;
+            color: $main;
+            font-weight: 600;
+        }
+
+        .popup__description {
+            font-size: 16px;
+        }
+
+        .popup__page-thumb {
+            width: 800px;
+            height: 380px;
+            overflow: hidden;
+            border: 1px solid black;
+            margin: 20px auto;
+            img{
+                width: 100%;
+            }
+        }
+
+        .popup__url-code {
+          margin: 0 auto;
+            font-weight: 600;
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+               
+            }
+        }
+
+       
+
+        // 버튼
+        .popup__button {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            margin-bottom: 60px;
+
+            button {
+                border: none;
+                width: 80px;
+                height: 40px;
+                border-radius: 8px;
+                background-color: #000;
+                font-size: 24px;
+                text-align: center;
+                color: #fff;
+            }
 
         }
 
     }
+
+
+
+
 
 }
 
@@ -334,7 +297,7 @@ section#portfolio .pop-up__wrapper {
                 .works__wrapper {
                     width: 100%;
                     margin: 0 auto;
-                    overflow: hidden;
+
 
                     img {
                         width: 100%;
@@ -519,14 +482,10 @@ section#portfolio .pop-up__wrapper {
     }
 
     // 모바일 반응형에서 팝업창
-    section#portfolio {
-        .pop-up__wrapper {
-            top: 100px;
+    // section#portfolio {
 
 
-        }
-
-    }
+    // }
 
     // 모바일 반응형에서 팝업창내용
     section#portfolio .pop-up__wrapper {
