@@ -147,7 +147,7 @@ window.onload = function () {
 
     // 변수설정
     let popUpTitle = document.querySelector('.popup__info-title');
-    let popUpSubtitle = document.querySelector('.popup__info-subtitle');
+    let popUpSubtitle = document.querySelector('.popup__info-subtitle span');
     let popUpSkills = document.querySelector('.popup__info-skills span');
     let popUpUrl = document.querySelector('.popup__info-url span');
     let popUpUrlHref = document.querySelector('.popup__info-url a');
@@ -168,6 +168,7 @@ window.onload = function () {
             // 팝업창 열기
             let popUp = document.querySelector(".pop-up__wrapper");
             popUp.classList.add('pop-up__wrapper__show');
+            document.body.style.overflowY='hidden';
 
             // 데이터 설정
             let data = popUpInfoArray[currentIndex];
@@ -200,6 +201,7 @@ window.onload = function () {
     popUpClose.addEventListener("click", function () {
         let popUp = document.querySelector(".pop-up__wrapper");
         popUp.classList.remove('pop-up__wrapper__show');
+        document.body.style.overflowY='';
     });
 
     // next 버튼 누를 때
