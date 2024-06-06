@@ -66,6 +66,7 @@ section#skills {
         justify-content: space-between;
         // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;/
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
 
 
 
@@ -97,6 +98,10 @@ section#skills {
             width: 300px;
             font-size: 18px;
             line-height: 1.5;
+            text-align: justify;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            word-break: break-all;
 
 
         }
@@ -227,6 +232,7 @@ section#skills {
                 margin-bottom: 0px;
 
 
+
             }
 
 
@@ -247,6 +253,7 @@ section#skills {
             .skills__description {
                 width: 60%;
                 font-size: 18px;
+                
 
                 // height: 100px;
             }

@@ -56,19 +56,21 @@ header {
                     font-weight: 800;
 
                     a {
-                       
+
                         position: relative;
-                        &::before{
+
+                        &::before {
                             content: "";
                             width: 0%;
-                            height:6px;
+                            height: 6px;
                             background-color: $main;
                             position: absolute;
                             bottom: 0;
                             z-index: -1;
                             opacity: 0.8;
-                            
+
                         }
+
                         &:hover::before {
                             content: "";
                             width: 100%;
@@ -128,8 +130,8 @@ header {
                 display: flex;
 
                 a {
-                    
-                    font-size: 1.5rem;
+
+                    font-size: 32px;
                     font-weight: 800;
                 }
 
@@ -211,6 +213,14 @@ header {
     header {
         .header__wrapper {
             width: $grid__mobile;
+
+            .header__logo {              
+
+                a {
+                    font-size: 28px;
+                    font-weight: 800;
+                }
+            }
 
             .header__nav__mobile-tablet {
                 .header__nav-list {

@@ -62,7 +62,7 @@ header .header__wrapper nav.header__nav__pc ul li a::before {
   content: "";
   width: 0%;
   height: 6px;
-  background-color: #20B2AA;
+  background-color: #007ACC;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -72,7 +72,7 @@ header .header__wrapper nav.header__nav__pc ul li a:hover::before {
   content: "";
   width: 100%;
   height: 6px;
-  background-color: #20B2AA;
+  background-color: #007ACC;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -86,7 +86,7 @@ header .header__wrapper nav.header__nav__pc ul li a.header__nav-list__pc-checked
   content: "";
   width: 100%;
   height: 6px;
-  background-color: #20B2AA;
+  background-color: #007ACC;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -110,7 +110,7 @@ header .header__wrapper .header__nav__mobile-tablet {
     display: flex;
   }
   header .header__wrapper .header__logo a {
-    font-size: 1.5rem;
+    font-size: 32px;
     font-weight: 800;
   }
   header .header__wrapper nav.header__nav__pc {
@@ -156,12 +156,16 @@ header .header__wrapper .header__nav__mobile-tablet {
     font-size: 100px;
   }
   header .header__wrapper .header__nav__mobile-tablet .header__nav-list ul li a.header__nav-list__mobile-checked {
-    color: #20B2AA;
+    color: #007ACC;
   }
 }
 @media (max-width: 768px) {
   header .header__wrapper {
     width: 90%;
+  }
+  header .header__wrapper .header__logo a {
+    font-size: 28px;
+    font-weight: 800;
   }
   header .header__wrapper .header__nav__mobile-tablet .header__nav-list {
     left: 0%;

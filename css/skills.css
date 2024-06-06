@@ -90,6 +90,10 @@ section#skills .tools__item .tools__description {
   width: 300px;
   font-size: 18px;
   line-height: 1.5;
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 section#skills .tools__item {
   display: none;

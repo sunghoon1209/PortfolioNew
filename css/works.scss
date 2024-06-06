@@ -1,0 +1,627 @@
+@import "./_variable.scss";
+@import "./reset.css";
+
+
+// 포트폴리오 페이지 pc버전
+section#portfolio {
+
+    // 27AE60 
+    padding-top: 100px;
+    height: 100%;
+    margin-bottom: 100px;
+
+}
+
+section#portfolio {
+
+
+    .portfolio__wrapper {
+        width: $grid__pc;
+        margin: 0 auto;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        // justify-content: space-between;
+        gap: 17px;
+
+
+        // 작품하나씩 들어가는 박스
+        .works {
+            width: 330px;
+            height: 200px;
+            transition: 1s;
+            position: relative;
+            cursor: pointer;
+
+
+
+            &:hover {
+                transform: scale(0.95);
+
+                &:before {
+                    width: 100%;
+
+                }
+
+                .works__title__pc {
+                    display: block;
+                    opacity: 0;
+                    // 호버시 애니메이션 추가
+                    animation: titleShow 1s forwards;
+                    animation-delay: 0.5s;
+
+                }
+
+                // 제목이 서서히 보이는 애니메이션
+                @keyframes titleShow {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+
+                }
+            }
+
+            // 박스 위에 마우스 올렸을때 배경
+            &:before {
+                content: "";
+                width: 0%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                transform: translateX(-50%);
+                left: 50%;
+                position: absolute;
+                transition: 1s;
+                // 가상요소가 클릭을 방해하기에 pointer-events: none; 로 배경작용만 하게 함
+                pointer-events: none;
+
+
+            }
+
+            .works__wrapper {
+                width: 330px;
+                height: 100%;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                }
+
+            }
+
+
+            .works__title__pc {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transition: delay 1s;
+                display: none;
+                transform: translate(-50%, -50%);
+
+
+                color: #fff;
+                font-size: 32px;
+                font-family: 'NanumSquare';
+                font-weight: 600;
+
+
+
+            }
+
+
+        }
+
+        // 각 작업물의 제목(mobile/tablet전용)
+        .works__title__mobile {
+            display: none; ///
+        }
+    }
+}
+
+// 포트폴리오 pc 팝업
+section#portfolio {
+    .pop-up__wrapper {
+        width: 100%;
+        background-color: $bgc;
+        height: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        pointer-events: none;
+
+    }
+
+    .pop-up__wrapper__show {
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 1s ease-in-out;
+
+    }
+
+}
+
+//   // 팝업창 내용들
+section#portfolio .pop-up__wrapper {
+
+    .pop-up__content {
+        
+        width: $grid__pc;
+        margin: 0 auto;
+        // height: 800px;
+        background-color: #fff;
+        box-shadow: 0 50px 100px rgba(17, 20, 39, 0.20);
+        margin-top: 40px;
+        padding: 40px 80px;
+        height: auto;
+         // 제목
+        .pop-up__title__container {
+            h2 {
+                text-align: left;
+                font-size: 32px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 40px;
+                    height: 4px;
+                    background-color: #111;
+                    position: absolute;
+                    top: -20px;
+                }
+
+            }
+
+            
+            .popup__info-subtitle {
+                font-size: 20px;
+                color: #d5d5d5;
+                margin: 10px 0 30px 0;
+
+            }
+        }       
+
+
+        .pop-up__content__info-img {
+            display: flex;
+            margin-bottom: 70px;
+
+
+            .pop-up__content__info {
+                width: 50%;
+               
+
+                // 프로젝트 제목
+
+
+            }
+
+            // 제목외에 정보들
+            p {
+                height: 33%;
+                width: 90%;
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-weight: 800;
+
+                span {
+                    width: 100%;
+                    font-weight: 400;
+                    display: block;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    word-break: break-all;
+
+                }
+            }
+
+        }
+
+
+
+        // 프로젝트 이미지
+        .pop-up__img__wrap {
+            width: 50%;
+            height: 240px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(17, 20, 39, 0.5);
+
+
+
+            img {
+                width: 100%;
+
+                display: block;
+            }
+        }
+    }
+
+    // 프로젝트에 대한 설명
+    .pop-up__content__description {
+        background-color: $bgc;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        overflow-y: scroll;
+        line-height: 1.5;
+        font-size: 18px;
+        // text-indent: 18px;
+        text-align: justify;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
+
+    }
+
+    // 버튼
+    .pop-up__button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            width: 80px;
+            height: 40px;
+            border-radius: 8px;
+
+            background-color: #000;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+
+        }
+
+    }
+
+}
+
+
+// tablet 반응형
+
+@media (max-width:$tablet) {
+    section#portfolio {
+
+        padding-top: 80px;
+        // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
+        height: 100%;
+    }
+
+    section#portfolio {
+        .portfolio__wrapper {
+            width: $grid__tablet;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 2%;
+
+            // 작품하나씩 들어가는 박스
+            .works {
+                width: 48%;
+                transition: 1s;
+                height: auto;
+                // height: 200px;
+                margin-bottom: 40px;
+
+
+                &:hover {
+                    transform: scale(1);
+
+                    // 태블릿 이하 사이즈에선 pc 구조의 호버배경 안보이게
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .works__wrapper {
+                    width: 100%;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        // height: 100%;
+
+                    }
+
+                    // pc외에선 제목 안보이게
+                    .works__title__pc {
+                        display: none;
+                    }
+                }
+
+            }
+
+            // 각 작업물의 제목(mobile/tablet전용)
+            .works__title__mobile {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // 태블릿 반응형에서 팝업창
+    section#portfolio {
+        .pop-up__wrapper {
+            top: 80px;
+            height: 100%;
+
+        }
+
+    }
+
+    // 태블릿 반응형에서 팝업창내용
+    section#portfolio .pop-up__wrapper {
+
+        .pop-up__content {
+            width: $grid__tablet;
+
+
+            padding: 40px 40px;
+
+            .pop-up__content__info-img {
+
+                margin-bottom: 60px;
+
+
+                .pop-up__content__info {
+
+
+                    // 프로젝트 제목
+                    h2 {
+
+                        font-size: 28px;
+
+
+                        &::before {
+
+                            top: -16px;
+                        }
+
+                    }
+
+                    // 제목외에 정보들
+                    p {
+
+                        width: 100%;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+
+
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .popup__info-subtitle {
+                        font-size: 18px;
+
+                    }
+                }
+
+
+
+                // 프로젝트 이미지
+                .pop-up__img__wrap {
+                    width: 50%;
+                    height: auto;
+
+
+
+                    img {
+                        width: 100%;
+
+                        display: block;
+                    }
+                }
+
+            }
+
+            // 프로젝트에 대한 설명
+            .pop-up__content__description {
+
+                font-size: 16px;
+                // text-indent: 18px;
+
+            }
+
+            // 버튼
+            .pop-up__button {
+
+                button {
+
+                    width: 60px;
+                    height: 30px;
+                    font-size: 20px;
+
+
+                }
+
+            }
+        }
+    }
+}
+
+
+// 모바일 반응형
+
+
+@media (max-width:$mobile) {
+    section#portfolio {
+        // 27AE60 
+        padding-top: 80px;
+        // header 영역이 fixed로 100px만큼 고정되어있어서 padding top 으로 추가 공간을 줫음
+
+        // height: 100%;
+    }
+
+    section#portfolio {
+
+
+        .portfolio__wrapper {
+            width: $grid__mobile;
+            margin-top: 20px;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            // 작품하나씩 들어가는 박스
+            .works {
+                width: 100%;
+                // height: 180px;
+                margin-bottom: 60px;
+                transition: 1s;
+                height: auto;
+
+                &:hover {
+                    transform: scale(1);
+                }
+
+                .works__wrapper {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        min-width: 100%;
+                    }
+                }
+
+            }
+
+            // 각 작업물의 제목(mobile/tablet전용)
+            .works__title__mobile {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // 모바일 반응형에서 팝업창
+    section#portfolio {
+        .pop-up__wrapper {
+            top: 100px;
+
+
+        }
+
+    }
+
+    // 모바일 반응형에서 팝업창내용
+    section#portfolio .pop-up__wrapper {
+
+        .pop-up__content {
+            width: $grid__mobile;
+            padding: 30px 30px;
+            margin-top: 120px;
+
+            .pop-up__content__info-img {
+                flex-direction: column;
+                margin-bottom: 30px;
+
+
+
+                .pop-up__content__info {
+                    width: 100%;
+                    order: 2;
+                    margin-top: 20px;
+
+
+                    // 프로젝트 제목
+                    h2 {
+
+                        font-size: 28px;
+
+
+                        &::before {
+
+                            top: -16px;
+                        }
+
+                    }
+
+                    // 제목외에 정보들
+                    p {
+
+                        width: 100%;
+                        margin-bottom: 16px;
+                        font-size: 14px;
+
+
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .popup__info-subtitle {
+                        font-size: 18px;
+
+                    }
+                }
+
+
+
+                // 프로젝트 이미지
+                .pop-up__img__wrap {
+                    width: 100%;
+                    height: auto;
+
+                    img {
+                        width: 100%;
+
+                        display: block;
+                    }
+                }
+
+            }
+
+            // 프로젝트에 대한 설명
+            .pop-up__content__description {
+
+                font-size: 16px;
+                // text-indent: 18px;
+                height: 140px;
+                margin-bottom: 20px;
+                display: none;
+
+
+            }
+
+            // 버튼
+            .pop-up__button {
+
+                button {
+
+                    width: 50px;
+                    height: 30px;
+                    font-size: 16px;
+
+
+                }
+
+            }
+        }
+    }
+
+}
