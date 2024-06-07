@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 @import "./reset.css";
 @font-face {
@@ -112,8 +113,7 @@ section#portfolio .popup .popup__content {
   width: 1024px;
   margin: 0 auto;
   font-size: 16px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 20px 0;
   line-height: 1.5;
   text-align: justify;
 }
@@ -152,9 +152,16 @@ section#portfolio .popup .popup__content .popup__page-thumb {
   overflow: hidden;
   border: 1px solid black;
   margin: 20px auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+section#portfolio .popup .popup__content .popup__page-thumb :-webkit-scrollbar {
+  display: none;
 }
 section#portfolio .popup .popup__content .popup__page-thumb img {
   width: 100%;
+  display: block;
 }
 section#portfolio .popup .popup__content .popup__url-code {
   margin: 0 auto;
@@ -164,26 +171,48 @@ section#portfolio .popup .popup__content .popup__url-code {
   justify-content: space-between;
 }
 section#portfolio .popup .popup__content .popup__url-code a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
   text-align: center;
-  font-weight: 600;
-  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #007ACC; /* Green */
+  border: none;
+  border-radius: 5px;
 }
 section#portfolio .popup .popup__content .popup__button {
   width: 100%;
   display: flex;
-  justify-content: end;
-  gap: 10px;
-  margin-bottom: 60px;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 section#portfolio .popup .popup__content .popup__button button {
-  border: none;
-  width: 80px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: #000;
-  font-size: 24px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
-  color: #fff;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #111;
+  border: none;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+section#portfolio .popup .popup__content .popup__button button.pop-up__button__list {
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0px solid #000;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @media (max-width: 1023px) {

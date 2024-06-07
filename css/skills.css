@@ -39,17 +39,24 @@ section#skills .skills__wrapper .skills__button-container {
   gap: 20px;
 }
 section#skills .skills__wrapper .skills__button-container .skills__button {
-  background-color: #fff;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 20px;
-  border: none;
-  cursor: pointer;
+  display: inline-block;
   padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007ACC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+section#skills .skills__wrapper .skills__button-container .skills__button_active {
+  color: #007ACC;
+  background-color: #fff;
+  border: 1px solid #007ACC;
 }
 section#skills .skills__item,
 section#skills .tools__item {
