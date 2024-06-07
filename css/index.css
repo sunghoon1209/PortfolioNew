@@ -19,16 +19,19 @@ body {
 section#me {
   padding-top: 100px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: #f5f6f9;
 }
 
 section#me .card {
   width: 560px;
-  margin: 0 auto;
+  height: 600px;
   perspective: 1000px;
-  margin-top: 100px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 section#me .card .card__inner {
   width: 100%;
@@ -115,6 +118,7 @@ section#me .card .card__info__wrap .card__info__about {
 section#me .card .card__info__wrap .card__info__about p {
   line-height: 1.5;
   font-size: 18px;
+  text-align: justify;
 }
 section#me .card .card__info__wrap .card__info__experience {
   margin-bottom: 60px;
@@ -176,11 +180,94 @@ section#me .card .card__tab .card__tab__active {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   section#me {
     height: 100vh;
     overflow: hidden;
     padding-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#me .card {
+    width: 80%;
+    margin-top: 60px;
+  }
+  section#me .card .card__front,
+  section#me .card .card__back {
+    height: 560px;
+  }
+  section#me .card .card__front h2 {
+    font-size: 48px;
+  }
+  section#me .card .card__back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  section#me .card .card__back .card__img-name {
+    margin-bottom: 18px;
+    margin-top: 40px;
+  }
+  section#me .card .card__back .card__img-name .card__img__wrap {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 14px;
+  }
+  section#me .card .card__back .card__img-name .card__img__wrap img {
+    width: 100%;
+    height: auto;
+  }
+  section#me .card .card__back .card__img-name .card__name {
+    font-size: 20px;
+  }
+  section#me .card .card__back .card__img-name .card__name p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  section#me .card .card__info__wrap {
+    width: 80%;
+    height: 160px;
+  }
+  section#me .card .card__info__wrap h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  section#me .card .card__info__wrap .card__info__about p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  section#me .card .card__info__wrap .card__info__experience .experience__item {
+    font-size: 16px;
+  }
+  section#me .card .card__info__wrap .card__info__experience .experience__item::before {
+    font-size: 14px;
+  }
+  section#me .card .card__info__wrap .card__info__contact div {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  section#me .card .card__info__wrap .card__info__contact .contact__email {
+    font-size: 14px;
+  }
+  section#me .card .card__tab {
+    height: 40px;
+    line-height: 40px;
+  }
+  section#me .card .card__tab button {
+    font-size: 16px;
+  }
+  section#me .card .card__tab .card__tab__active {
+    border-bottom: 3px solid #007ACC;
+  }
+}
+@media (max-width: 768px) {
+  section#me {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 140px;
     width: 100%;
     margin: 0 auto;
   }

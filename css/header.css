@@ -61,18 +61,19 @@ header .header__wrapper nav.header__nav__pc ul li a {
 header .header__wrapper nav.header__nav__pc ul li a::before {
   content: "";
   width: 0%;
-  height: 6px;
-  background-color: #007ACC;
+  height: 16px;
+  background-color: #FFFF00;
   position: absolute;
   bottom: 0;
   z-index: -1;
   opacity: 0.8;
+  transition: 0.7s;
 }
 header .header__wrapper nav.header__nav__pc ul li a:hover::before {
   content: "";
   width: 100%;
-  height: 6px;
-  background-color: #007ACC;
+  height: 16px;
+  background-color: #FFFF00;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -85,8 +86,8 @@ header .header__wrapper nav.header__nav__pc ul li a.header__nav-list__pc-checked
 header .header__wrapper nav.header__nav__pc ul li a.header__nav-list__pc-checked::before {
   content: "";
   width: 100%;
-  height: 6px;
-  background-color: #007ACC;
+  height: 16px;
+  background-color: #FFFF00;
   position: absolute;
   bottom: 0;
   z-index: -1;
