@@ -14,7 +14,7 @@
   font-style: normal;
 }
 body {
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 
 section#portfolio {
@@ -105,7 +105,7 @@ section#portfolio .popup--show {
 }
 
 section#portfolio .popup {
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 section#portfolio .popup .popup__content {
   background-color: #fff;
@@ -248,6 +248,10 @@ section#portfolio .popup .popup__content .popup__features .popup__features__img-
 section#portfolio .popup .popup__content .popup__features .popup__features__img-wrap img {
   width: 100%;
   min-width: 100%;
+}
+section#portfolio .popup .popup__content .popup__feedback .popup__feedback__1st,
+section#portfolio .popup .popup__content .popup__feedback .popup__feedback__2nd {
+  text-indent: 16px;
 }
 
 @media (max-width: 1023px) {

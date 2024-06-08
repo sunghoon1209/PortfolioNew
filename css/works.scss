@@ -329,6 +329,12 @@ section#portfolio .popup {
                 }
             }
         }
+        .popup__feedback{
+            .popup__feedback__1st,
+            .popup__feedback__2nd{
+                text-indent: 16px;
+            }
+        }
 
 
     }

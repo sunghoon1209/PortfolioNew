@@ -23,7 +23,7 @@ section#skills {
             display: flex;
             flex-wrap: wrap;
             gap: 24px;
-            
+
         }
 
     }
@@ -32,29 +32,26 @@ section#skills {
     .skills__wrapper .skills__button-container {
         display: flex;
         justify-content: end;
-        gap: 20px;
+        gap: 24px;
+        margin-bottom: 16px;
 
         .skills__button {
-            display: inline-block;
-            padding: 10px 20px;              
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            color: #ffffff;
-            background-color: $main;
+            font-size: 20px;
+            position: relative;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 10px 0;
+            font-size: 20px;
+            z-index: 3;
+            text-align: center;
+            position: relative;
+            font-weight: 400;
         }
-        .skills__button_active{
+
+        .skills__button_active {
+
+            font-weight: 800;
             color: $main;
-            background-color: #fff;
-            border: 1px solid $main;
         }
-        
+
 
 
     }
@@ -72,7 +69,7 @@ section#skills {
         justify-content: space-between;
         // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;/
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        
+
 
 
 
@@ -216,7 +213,7 @@ section#skills {
 @media (max-width:$mobile) {
     section#skills {
         padding-top: 80px;
-       
+
     }
 
     section#skills {
@@ -259,7 +256,7 @@ section#skills {
             .skills__description {
                 width: 60%;
                 font-size: 18px;
-                
+
 
                 // height: 100px;
             }

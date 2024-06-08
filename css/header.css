@@ -13,7 +13,7 @@
   font-style: normal;
 }
 body {
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 
 header {
@@ -155,9 +155,18 @@ header .header__wrapper .header__nav__mobile-tablet {
     font-family: "NanumSquare";
     font-weight: 800;
     font-size: 100px;
+    position: relative;
   }
-  header .header__wrapper .header__nav__mobile-tablet .header__nav-list ul li a.header__nav-list__mobile-checked {
-    color: #007ACC;
+  header .header__wrapper .header__nav__mobile-tablet .header__nav-list ul li a.header__nav-list__mobile-checked:before {
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #FFFF00;
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    opacity: 0.8;
+    transition: 0.7s;
   }
 }
 @media (max-width: 768px) {

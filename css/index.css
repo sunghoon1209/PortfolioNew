@@ -13,7 +13,7 @@
   font-style: normal;
 }
 body {
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 
 section#me {
@@ -21,7 +21,7 @@ section#me {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 
 section#me .card {
@@ -64,7 +64,7 @@ section#me .card .card__front h2 {
   font-size: 80px;
   letter-spacing: normal;
   font-weight: 800;
-  color: #007ACC;
+  color: #0d1b4c;
 }
 section#me .card .card__back {
   transform: rotateY(180deg);
@@ -97,7 +97,7 @@ section#me .card .card__back .card__img-name .card__name {
   position: relative;
 }
 section#me .card .card__back .card__img-name .card__name p {
-  color: #007ACC;
+  color: #0d1b4c;
   font-size: 18px;
   font-weight: 600;
   margin-top: 8px;
@@ -173,7 +173,7 @@ section#me .card .card__tab button {
   cursor: pointer;
 }
 section#me .card .card__tab .card__tab__active {
-  border-bottom: 5px solid #007ACC;
+  border-bottom: 5px solid #0d1b4c;
   box-shadow: 0 50px 100px rgba(17, 20, 39, 0.2);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -260,7 +260,7 @@ section#me .card .card__tab .card__tab__active {
     font-size: 16px;
   }
   section#me .card .card__tab .card__tab__active {
-    border-bottom: 3px solid #007ACC;
+    border-bottom: 3px solid #0d1b4c;
   }
 }
 @media (max-width: 768px) {
@@ -343,6 +343,6 @@ section#me .card .card__tab .card__tab__active {
     font-size: 16px;
   }
   section#me .card .card__tab .card__tab__active {
-    border-bottom: 3px solid #007ACC;
+    border-bottom: 3px solid #0d1b4c;
   }
 }/*# sourceMappingURL=index.css.map */

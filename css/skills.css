@@ -13,7 +13,7 @@
   font-style: normal;
 }
 body {
-  background-color: #f5f6f9;
+  background-color: hsl(223, 90%, 95%);
 }
 
 section#skills {
@@ -36,27 +36,22 @@ section#skills .skills__wrapper .skills__container {
 section#skills .skills__wrapper .skills__button-container {
   display: flex;
   justify-content: end;
-  gap: 20px;
+  gap: 24px;
+  margin-bottom: 16px;
 }
 section#skills .skills__wrapper .skills__button-container .skills__button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #007ACC;
+  font-size: 20px;
+  position: relative;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px 0;
+  font-size: 20px;
+  z-index: 3;
+  text-align: center;
+  position: relative;
+  font-weight: 400;
 }
 section#skills .skills__wrapper .skills__button-container .skills__button_active {
-  color: #007ACC;
-  background-color: #fff;
-  border: 1px solid #007ACC;
+  font-weight: 800;
+  color: #0d1b4c;
 }
 section#skills .skills__item,
 section#skills .tools__item {
