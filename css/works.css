@@ -70,7 +70,7 @@ section#portfolio .portfolio__wrapper .works:before {
 }
 section#portfolio .portfolio__wrapper .works .works__wrapper {
   width: 330px;
-  height: 100%;
+  aspect-ratio: 1.6;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 section#portfolio .portfolio__wrapper .works .works__wrapper img {
@@ -283,6 +283,7 @@ section#portfolio .popup .popup__content .popup__feedback .popup__feedback__2nd 
     width: 100%;
     margin: 0 auto;
     height: 200px;
+    aspect-ratio: 1.6;
     overflow: hidden;
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper img {
@@ -344,7 +345,7 @@ section#portfolio .popup .popup__content .popup__feedback .popup__feedback__2nd 
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper {
     width: 100%;
-    aspect-ratio: 2;
+    aspect-ratio: 1.6;
   }
   section#portfolio .portfolio__wrapper .works .works__wrapper img {
     width: 100%;
