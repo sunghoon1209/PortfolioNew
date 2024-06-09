@@ -48,6 +48,7 @@ section#skills .skills__wrapper .skills__button-container .skills__button {
   text-align: center;
   position: relative;
   font-weight: 400;
+  cursor: pointer;
 }
 section#skills .skills__wrapper .skills__button-container .skills__button_active {
   font-weight: 800;
