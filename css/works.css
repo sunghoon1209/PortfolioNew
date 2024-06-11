@@ -398,7 +398,7 @@ section#portfolio .popup .popup__content .popup__feedback .popup__feedback__2nd 
   }
   section#portfolio .popup .popup__content .popup__page-thumb {
     width: 90%;
-    height: 200px;
+    height: 180px;
     overflow: hidden;
     overflow-y: scroll;
     margin: 16px auto;

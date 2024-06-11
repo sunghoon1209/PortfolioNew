@@ -313,27 +313,31 @@ section#portfolio .popup {
 
         }
 
-        
+
         .popup__features {
             .popup__features__desc {
                 text-indent: 16px;
 
-                
+
             }
+
             .popup__features__img-wrap {
                 width: 80%;
                 overflow: hidden;
                 margin-top: 16px;
                 margin: 0 auto;
+
                 img {
                     width: 100%;
-                    min-width: 100%;                   
+                    min-width: 100%;
                 }
             }
         }
-        .popup__feedback{
+
+        .popup__feedback {
+
             .popup__feedback__1st,
-            .popup__feedback__2nd{
+            .popup__feedback__2nd {
                 text-indent: 16px;
             }
         }
@@ -371,10 +375,10 @@ section#portfolio .popup {
             .works {
                 width: 48%;
                 transition: 1s;
-               
-                
+
+
                 margin-bottom: 60px;
-                
+
 
 
                 &:hover {
@@ -495,7 +499,7 @@ section#portfolio .popup {
                 .works__wrapper {
                     width: 100%;
                     aspect-ratio: 1.6;
-                    
+
 
                     img {
                         width: 100%;
@@ -578,7 +582,7 @@ section#portfolio .popup {
             // 썸네일
             .popup__page-thumb {
                 width: 90%;
-                height: 200px;
+                height: 180px;
                 overflow: hidden;
                 overflow-y: scroll;
                 margin: 16px auto;
@@ -630,11 +634,13 @@ section#portfolio .popup {
                 .popup__features__desc {
                     text-indent: 16px;
 
-                    
+
                 }
+
                 .popup__features__img-wrap {
                     width: 100%;
                     overflow: hidden;
+
                     img {
                         width: 100%;
                         min-width: 100%;
