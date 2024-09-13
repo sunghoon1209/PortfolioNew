@@ -134,7 +134,13 @@ section#me {
         .card__info__wrap {
             width: 400px;
             height: 200px;
-
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar{
+                display:none;
+              }        
+          
             // 각종 타이틀 부분
             h2 {
                 font-size: 20px;
@@ -158,25 +164,24 @@ section#me {
             .card__info__experience {
                 margin-bottom: 60px;
                 display: none;
+                
 
                 .experience__item {
-                    margin-left: 60px;
-                    border-left: 2px solid #111;
-                    height: 80px;
+                    display: flex;
+                    gap: 10px;
+                    .experience__item__period{
+                        border-right: 2px solid #111;
+                        text-align: left;
+                        font-size: 14px;
+                        padding-right: 10px;
+                    }
+          
+                    height: 100px;
                     position: relative;
                     padding-left: 10px;
                     line-height: 1.5;
                     font-size: 18px;
 
-                    &::before {
-                        content: "2024.3";
-                        position: absolute;
-                        font-size: 12px;
-                        left: -60px;
-                        top: 0px;
-                        font-weight: 800;
-
-                    }
 
                 }
             }

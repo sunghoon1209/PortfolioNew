@@ -105,6 +105,12 @@ section#me .card .card__back .card__img-name .card__name p {
 section#me .card .card__info__wrap {
   width: 400px;
   height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+section#me .card .card__info__wrap::-webkit-scrollbar {
+  display: none;
 }
 section#me .card .card__info__wrap h2 {
   font-size: 20px;
@@ -125,21 +131,19 @@ section#me .card .card__info__wrap .card__info__experience {
   display: none;
 }
 section#me .card .card__info__wrap .card__info__experience .experience__item {
-  margin-left: 60px;
-  border-left: 2px solid #111;
-  height: 80px;
+  display: flex;
+  gap: 10px;
+  height: 100px;
   position: relative;
   padding-left: 10px;
   line-height: 1.5;
   font-size: 18px;
 }
-section#me .card .card__info__wrap .card__info__experience .experience__item::before {
-  content: "2024.3";
-  position: absolute;
-  font-size: 12px;
-  left: -60px;
-  top: 0px;
-  font-weight: 800;
+section#me .card .card__info__wrap .card__info__experience .experience__item .experience__item__period {
+  border-right: 2px solid #111;
+  text-align: left;
+  font-size: 14px;
+  padding-right: 10px;
 }
 section#me .card .card__info__wrap .card__info__contact {
   margin-bottom: 60px;
