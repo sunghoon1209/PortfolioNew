@@ -21,7 +21,7 @@ window.onload = function() {
         let nextBtn = document.querySelectorAll('.pop-up__button__next');
         nextBtn.forEach(function(button) {
                 button.addEventListener("click", function() {
-                        console.log(currentIndex);
+                        
                         if (currentIndex == 12) {
                                 currentIndex = 0;
                         } else {
@@ -45,7 +45,7 @@ $('.pop-up__button__list').on('click', function() {
 });
 // 배경클릭시 팝업창닫기
 $('.popup_bg').on('click', function(e) {
-        console.log(e.target);
+        
         if (e.target == document.querySelector('.popup')) {
                 $('.popup_bg').css("display", "none");
                 let wrapper = document.querySelector('.portfolio__wrapper');
