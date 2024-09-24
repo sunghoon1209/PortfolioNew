@@ -8,6 +8,7 @@ window.onload = function() {
                         currentIndex = index;
                         // 팝업창 열기
                         let wrapper = document.querySelector('.portfolio__wrapper');
+                        $('.popup_bg').css("display", "block");
                         wrapper.classList.add('portfolio__wrapper--hide');
                         // 팝업창 열기
                         let popUp = document.querySelector(".popup");
@@ -31,26 +32,28 @@ window.onload = function() {
                 })
         });
 
-        // 팝업창 닫기
-        let popUpClose = document.querySelectorAll('.pop-up__button__list');
-        popUpClose.forEach(function(button) {
-                button.addEventListener("click", function() {
-                        let wrapper = document.querySelector('.portfolio__wrapper');
-                        wrapper.classList.remove('portfolio__wrapper--hide');
-
-                        let popUp = document.querySelector(".popup");
-                        popUp.classList.remove('popup--show');
-                })
-        });
 
 
 };
 //팝업창 닫기
 $('.pop-up__button__list').on('click', function() {
+        $('.popup_bg').css("display", "none");
         let wrapper = document.querySelector('.portfolio__wrapper');
         wrapper.classList.remove('portfolio__wrapper--hide');
         let popUp = document.querySelector(".popup");
         popUp.classList.remove('popup--show');
+});
+// 배경클릭시 팝업창닫기
+$('.popup_bg').on('click', function(e) {
+        console.log(e.target);
+        if (e.target == document.querySelector('.popup')) {
+                $('.popup_bg').css("display", "none");
+                let wrapper = document.querySelector('.portfolio__wrapper');
+                wrapper.classList.remove('portfolio__wrapper--hide');
+                let popUp = document.querySelector(".popup");
+                popUp.classList.remove('popup--show');
+        }
+
 });
 
 // json 데이터 바인딩
@@ -90,17 +93,15 @@ function databinding(index) {
                         popUpVision.text(item.develpVision);
                         popUpSkills.text(item.skills);
                         popUpFeature1st.text(item.feature1st);
-                        popUpFeature1stImg.attr("href", item.feature1stImg);
+                        popUpFeature1stImg.attr("src", item.feature1stImg);
                         popUpFeature2nd.text(item.feature2nd);
-                        popUpFeature2ndImg.attr("href", item.feature2ndImg);
+                        popUpFeature2ndImg.attr("src", item.feature2ndImg);
                         popUpFeedback.text(item.feedback);
                         popUpFeedback2nd.text(item.feedback2nd);
 
 
 
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                        console.error('Failed to load data:', textStatus, errorThrown);
                 }
+
         });
 };

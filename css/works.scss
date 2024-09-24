@@ -142,11 +142,22 @@ section#portfolio {
     }
 
 }
+.popup_bg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999999;
+   
+    display: none;
+}
 
 //   // 팝업창 틀
 section#portfolio .popup {
-
-    background-color: $bgc;
+    
+   
 
     // 팝업 내용
     .popup__content {
@@ -158,6 +169,14 @@ section#portfolio .popup {
         line-height: 1.5;
         text-align: justify;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        overflow-y: scroll;
+        height: 100vh;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar{
+            display:none;
+          }
+          
 
         // 각 항목별 여백
         >div {

@@ -11,8 +11,8 @@
         "skills": "HTML SCSS JavaScript jQuery",
         "feature1st": "• Class 지정할때 BEM 방법으로 가독성 향상 및 유지보수 용이화",
         "feature1stImg": "./images/portfolioN_feature.webp",
-        "feature2nd": "• 팝업창의 경우 HTML을 하나만 생성해두고 javascript에서 각각 데이터로 묶은 후 querySelectorAll과 forEach문을 사용해서 텍스트와 이미지, 이미지의 alt값이 바뀌는 기능을 구현했습니다.",
-        "feature2ndImg": "./images/portfolioN_feature2.webp",
+        "feature2nd": "초기에는 HTML에 모든 팝업창을 마크업하여 서버 사이드 랜더링으로 사용하다가 javascript로 Array에 데이터를 넣은 후 사용하는 식으로 클라이언트 사이드 랜더링으로 변경하였습니다. 최종적으로는 javascript 배열식으로 들어있던 데이터를 json 파일로 제작하여 ajax로 호출하는 방식을 적용했습니다.",
+        "feature2ndImg": "./images/portfolioN_feature2.png",
         "feedback": "• 동일한 구조의 header지만 그리드를 margin 0 auto로 잡았기때문에 스크롤바가 있는 페이지와 없는 페이지의 중앙 너비가 다르게 보임",
         "feedback2nd": "• 이미지들의 용량이 있어서 페이지를 로드하는 시간이 지연됨(전부 webp로 변환해서 해결완료)"
     },
